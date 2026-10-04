@@ -1,0 +1,140 @@
+<template>
+<style>
+@font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans.ttf') format('truetype');font-weight:100 900;font-style:normal}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:'DM Sans';color:#0d1019}
+.clip{position:absolute;inset:0;width:1920px;height:1080px}
+.lpv4-02-ground{background:#f3f5fa}
+.lpv4-02-title{position:absolute;left:76px;top:64px;margin:0;font-size:76px;font-weight:800;letter-spacing:-3px}
+.lpv4-02-eyebrow{position:absolute;left:80px;top:174px;font-size:24px;font-weight:750;letter-spacing:3px}
+.lpv4-02-intro{position:absolute;left:100px;top:300px;width:650px}
+.lpv4-02-value{font-size:140px;font-weight:850;line-height:1.1;letter-spacing:-6px}
+.lpv4-02-label{font-size:36px;font-weight:750;letter-spacing:2px;margin-top:12px}
+.lpv4-02-dead{margin-top:42px;font-size:36px;color:#545e77;display:flex;align-items:center;gap:22px}
+.lpv4-02-cross{font-size:56px;color:#aab3c8;font-weight:600}
+.lpv4-02-pip{position:absolute;left:1160px;top:230px;width:580px;height:580px;transform-origin:0 0;z-index:5}
+.lpv4-02-pip img{width:100%;height:100%;object-fit:contain}
+.lpv4-02-stage{position:absolute;left:0;top:0;width:1920px;height:970px}
+.lpv4-02-node{position:absolute;left:50%;top:50%;width:600px;height:350px;box-sizing:border-box;border-radius:28px;padding:38px;transform-origin:50% 50%}
+.lpv4-02-spend{border:3px solid #aab3c8;background:#f3f5fa;color:#545e77}
+.lpv4-02-balance{background:#3452ff;color:#f8f36b}
+.lpv4-02-node .lpv4-02-value{font-size:116px;white-space:nowrap}
+.lpv4-02-node .lpv4-02-label{font-size:32px;letter-spacing:1px}
+.lpv4-02-status{font-size:36px;font-weight:700;margin-top:28px;letter-spacing:-1px}
+.lpv4-02-or{position:absolute;left:50%;top:50%;width:140px;height:120px;display:grid;place-items:center;font-size:82px;line-height:1;font-weight:900;background:#f3f5fa}
+.lpv4-02-line{position:absolute;height:5px;background:#aab3c8;transform-origin:0 50%}
+.lpv4-02-line-a{left:700px;top:485px;width:65px}
+.lpv4-02-line-b{left:900px;top:485px;width:70px;background:#3452ff}
+.lpv4-02-stamp{position:relative;z-index:2;display:inline-block;background:#f8f36b;color:#0d1019;border-radius:12px;padding:14px 22px;font-size:36px;font-weight:800;transform-origin:50% 50%;margin-top:26px}
+.lpv4-02-result{position:absolute;left:949px;top:292px;width:895px;transform-origin:50% 50%}
+.lpv4-02-result-label{font-size:24px;letter-spacing:2px;font-weight:750;margin-bottom:22px;color:#3452ff}
+.lpv4-02-crop{width:895px;height:370px;overflow:hidden;border-radius:22px;box-shadow:0 16px 50px #0d10191a}
+.lpv4-02-crop img{display:block;width:895px;height:auto}
+.lpv4-02-unverified{position:absolute;left:76px;top:804px;font-size:48px;line-height:1.2;font-weight:800;letter-spacing:-1.5px;border-left:8px solid #3452ff;padding-left:24px}
+</style>
+<div id="root" data-composition-id="lpv4-02" data-duration="19.068958" data-width="1920" data-height="1080">
+<div id="lpv4-02-clip-1" class="clip lpv4-02-ground" data-start="0" data-duration="19.068958" data-track-index="0"></div>
+<div id="lpv4-02-clip-2" class="clip" data-start="0" data-duration="19.068958" data-track-index="1">
+<h1 class="lpv4-02-title">ICICI WORLD DEBIT</h1>
+<div class="lpv4-02-eyebrow">EXAMPLE FACTS</div>
+<div class="lpv4-02-intro" id="lpv4-02-intro"><div class="lpv4-02-value">₹0</div><div class="lpv4-02-label">SPEND</div><div class="lpv4-02-dead" id="lpv4-02-dead"><span class="lpv4-02-cross">×</span>Spend route not met</div></div>
+<div class="lpv4-02-line lpv4-02-line-a" id="lpv4-02-line-a"></div>
+<div class="lpv4-02-line lpv4-02-line-b" id="lpv4-02-line-b"></div>
+<div class="lpv4-02-stage">
+<div class="lpv4-02-node lpv4-02-spend" id="lpv4-02-spend" data-target-x="-560" data-target-y="0"><div class="lpv4-02-value">₹0</div><div class="lpv4-02-label">SPEND</div><div class="lpv4-02-status">× Spend route not met</div></div>
+<div class="lpv4-02-node lpv4-02-balance" id="lpv4-02-balance" data-target-x="310" data-target-y="0"><div class="lpv4-02-value" id="lpv4-02-amount">₹12 lakh</div><div class="lpv4-02-label" id="lpv4-02-qualifying">QUALIFYING BALANCE</div><div class="lpv4-02-stamp" id="lpv4-02-stamp">✓ Balance route met</div></div>
+<div class="lpv4-02-or" id="lpv4-02-or">OR</div>
+</div>
+<div class="lpv4-02-pip" id="lpv4-02-pip"><svg style="width:100%;height:100%;display:block" class="pip-rig lpv4-02-actor" viewBox="0 0 480 480" aria-hidden="true"><defs><linearGradient id="lpv4-02-_R_0_-shell" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7095ff"></stop><stop offset=".45" stop-color="#3452ff"></stop><stop offset="1" stop-color="#1b2aac"></stop></linearGradient><linearGradient id="lpv4-02-_R_0_-edge" x1="0" x2="1"><stop stop-color="#7ac8ff"></stop><stop offset="1" stop-color="#385eea"></stop></linearGradient><linearGradient id="lpv4-02-_R_0_-visor" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#293057"></stop><stop offset="1" stop-color="#080c20"></stop></linearGradient><linearGradient id="lpv4-02-_R_0_-paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#bfcaff"></stop></linearGradient></defs><ellipse class="rig-shadow" cx="246" cy="421" rx="111" ry="15" fill="#020613" opacity=".22"></ellipse><g class="rig-all"><g class="rig-feet"><g class="rig-foot-left"><path d="M170 361 205 360 209 401Q206 419 164 417Q143 414 150 399Z" fill="url(#lpv4-02-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M155 406Q174 411 203 405" fill="none" stroke="#7d9dff" stroke-width="4"></path></g><g class="rig-foot-right"><path d="M273 360 309 357 331 399Q338 417 304 420Q277 422 273 403Z" fill="url(#lpv4-02-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M282 408Q303 414 324 406" fill="none" stroke="#7d9dff" stroke-width="4"></path></g></g><g class="rig-torso"><g class="rig-arm-left"><path d="M155 239Q122 229 102 204" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m113 211-62-48 20 71 42-8 13-20Z" fill="url(#lpv4-02-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m51 163 54 62-34 9" fill="#3452ff"></path><path d="m51 163 62 48-8 14Z" fill="#f3f5fa"></path></g><g class="rig-arm-right"><path d="M318 240Q351 253 367 279" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m355 267 73 51-59-2-23-35Z" fill="url(#lpv4-02-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m355 267 73 51-61-18Z" fill="#f3f5fa"></path><path d="m367 300 61 18-59-2Z" fill="#3452ff"></path></g><path d="M164 77 328 92Q349 95 346 121L323 346Q320 371 296 376L143 360Z" fill="#182bac" stroke="#1d2ea9" stroke-width="4"></path><path d="M159 77Q140 76 137 98L131 128Q153 137 145 157Q141 169 127 168L112 299Q131 311 124 330Q118 344 115 344L115 350Q114 366 135 369L289 389Q310 392 313 371L323 336Q301 326 308 306Q312 295 327 294L344 164Q324 153 331 134Q336 121 347 119L351 109Q354 91 333 88Z" fill="url(#lpv4-02-_R_0_-shell)" stroke="#8da8ff" stroke-width="3"></path><path d="m283 83 31 4-29 297-30-4Z" fill="url(#lpv4-02-_R_0_-edge)" opacity=".85"></path><path d="m299 110-21 244" fill="none" stroke="#c0e4ff" stroke-width="5" stroke-dasharray="11 15" stroke-linecap="round"></path><path d="m154 93 116 14" fill="none" stroke="#acbdff" stroke-width="4" stroke-linecap="round" opacity=".65"></path><path d="m142 330 92 11" fill="none" stroke="#0c268f" stroke-width="3" stroke-linecap="round" opacity=".3"></path><g class="rig-head"><path d="M166 150Q133 162 135 207Q137 246 179 255L250 264Q278 260 281 218Q287 171 251 160Z" fill="url(#lpv4-02-_R_0_-visor)" stroke="#172044" stroke-width="5"></path><path d="M150 181Q169 158 197 168" fill="none" stroke="#6b78ae" stroke-width="5" stroke-linecap="round" opacity=".6"></path><g class="rig-look"><g class="rig-eyes"><path d="M171 201Q177 176 187 185Q199 194 189 218Q183 211 174 219Q170 211 171 201Z" fill="#f8f36b"></path><path d="M224 209Q232 184 243 194Q253 204 243 226Q236 217 227 227Q222 219 224 209Z" fill="#f8f36b"></path></g><g class="rig-brows" fill="none" stroke="#f8f36b" stroke-width="4" stroke-linecap="round"><path d="m169 181 16-4"></path><path d="m229 186 15 7"></path></g><g class="rig-mouth"><ellipse cx="209" cy="240" rx="11" ry="8" fill="#f8f36b"></ellipse><ellipse cx="209" cy="236" rx="6" ry="2" fill="#ffffc6"></ellipse></g></g></g><path d="m149 280 74 9" stroke="#bdcdff" stroke-width="3" opacity=".45"></path><path d="m148 289 50 6" stroke="#bdcdff" stroke-width="2" opacity=".45"></path><rect x="244" y="296" width="19" height="30" rx="3" fill="#a9c7ff" opacity=".7" transform="rotate(7 244 296)"></rect><path d="m248 303 11 1m-12 5 11 1m-12 5 11 1" stroke="#2441bb" stroke-width="2"></path></g></g></svg></div>
+<div class="lpv4-02-result" id="lpv4-02-result"><div class="lpv4-02-result-label">PUBLISHED VERDICT · REAL CAPTURE</div><div class="lpv4-02-crop"><img src="assets/v3/icici-result.png" alt="Published benefit conditions met; 1 of 2 visits left; exact lounge remains unverified"></div></div>
+<div class="lpv4-02-unverified" id="lpv4-02-unverified">Exact lounge: unverified</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+<script>
+(function(){
+const tl=gsap.timeline({paused:true});
+window.__timelines=window.__timelines||{};
+window.__timelines['lpv4-02']=tl;
+tl.fromTo('.lpv4-02-title',{y:18,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},0);
+tl.fromTo('#lpv4-02-intro',{y:32,opacity:0},{y:0,opacity:1,duration:.5,ease:'power3.out'},.05);
+tl.fromTo('#lpv4-02-pip',{x:70,y:0,scale:1,opacity:0},{x:0,y:0,scale:1,opacity:1,duration:.5,ease:'power3.out'},0);
+tl.fromTo('#lpv4-02-dead',{y:18,opacity:0},{y:0,opacity:1,duration:.4,ease:'power3.out'},3.55);
+// Internal leftward cut: the opening fact gives way to the expanding OR map.
+tl.to('#lpv4-02-intro',{x:-130,duration:.3,ease:'power4.in'},4.7);
+tl.to('#lpv4-02-intro',{opacity:0,duration:.28,ease:'none'},4.72);
+['spend','balance'].forEach(function(name,i){
+const el=document.getElementById('lpv4-02-'+name);
+tl.fromTo(el,{xPercent:-50,yPercent:-50,x:0,y:0,scale:.6,opacity:0},{x:Number(el.dataset.targetX),y:Number(el.dataset.targetY),scale:1,opacity:1,duration:1.3,ease:'power3.out'},5+i*.06);
+});
+tl.fromTo('#lpv4-02-or',{xPercent:-50,yPercent:-50,x:0,y:0,scale:.6,opacity:0},{x:-130,y:0,scale:1,opacity:1,duration:1.3,ease:'power3.out'},5.04);
+tl.fromTo('#lpv4-02-line-a, #lpv4-02-line-b',{scaleX:0,opacity:0},{scaleX:1,opacity:1,duration:.7,ease:'power3.out'},5.6);
+tl.to('#lpv4-02-pip',{x:355,y:226,scale:.57,rotation:-7,duration:1.3,ease:'power2.inOut'},5);
+tl.fromTo('#lpv4-02-amount',{y:22,opacity:0},{y:0,opacity:1,duration:.55,ease:'power3.out'},7.45);
+tl.fromTo('#lpv4-02-qualifying',{y:16,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},8.05);
+tl.fromTo('#lpv4-02-stamp',{y:18,opacity:0},{y:0,opacity:1,duration:.4,ease:'power3.out'},9.05);
+// Tactile compression and adjacent spring recovery on the resting evidence stamp.
+tl.to('#lpv4-02-stamp',{scale:.92,duration:.18,ease:'none'},9.65);
+tl.to('#lpv4-02-stamp',{scale:1,duration:.65,ease:'back.out(2)'},9.83);
+tl.to('#lpv4-02-pip',{scale:.54,rotation:0,duration:.18,ease:'none'},9.65);
+tl.to('#lpv4-02-pip',{scale:.57,duration:.65,ease:'back.out(2)'},9.83);
+// Reflow the same graph into a compact vertical OR map; the source stays native size.
+tl.to('#lpv4-02-spend',{x:-540,y:-150,scale:.65,duration:.8,ease:'power2.inOut'},11);
+tl.to('#lpv4-02-balance',{x:-540,y:160,scale:.75,duration:.8,ease:'power2.inOut'},11);
+tl.to('#lpv4-02-or',{x:-540,y:0,scale:.65,duration:.8,ease:'power2.inOut'},11);
+tl.to('#lpv4-02-line-a',{x:-280,y:-37,rotation:90,scaleX:.27,duration:.8,ease:'power2.inOut'},11);
+tl.to('#lpv4-02-line-b',{x:-480,y:42,rotation:90,scaleX:.25,duration:.8,ease:'power2.inOut'},11);
+tl.to('#lpv4-02-pip',{x:-535,y:290,scale:.5,rotation:0,duration:.8,ease:'power2.inOut'},11);
+tl.fromTo('#lpv4-02-result',{x:130,opacity:0},{x:0,opacity:1,duration:.65,ease:'power4.out'},11.3);
+tl.fromTo('#lpv4-02-unverified',{y:20,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},12.65);
+
+      const retime = 1.031906514;
+      const authoredTweens = tl.getChildren(false,true,false);
+      authoredTweens.forEach(t => { const at=t.startTime()*retime; t.duration(t.duration()*retime); t.startTime(at); });
+      const actor = '.lpv4-02-actor';
+      const joint = part => actor+' .rig-'+part;
+      tl.set('.lpv4-02-actor .rig-mouth',{scaleY:.16,svgOrigin:'209 239'},0);
+      tl.set('.lpv4-02-actor .rig-eyes',{scaleY:1,svgOrigin:'209 206'},0);
+      tl.set('.lpv4-02-actor .rig-torso',{svgOrigin:'235 355'},0);
+      tl.set('.lpv4-02-actor .rig-arm-left',{svgOrigin:'155 239'},0);
+      tl.set('.lpv4-02-actor .rig-arm-right',{svgOrigin:'318 240'},0);
+      tl.set('.lpv4-02-actor .rig-foot-left',{svgOrigin:'185 382'},0);
+      tl.set('.lpv4-02-actor .rig-foot-right',{svgOrigin:'295 382'},0);
+      // Eyelids and gaze change independently; the viewer can see Pip thinking.
+      for(let t=2;t<15.651958-.4;t+=3.2){
+        tl.to('.lpv4-02-actor .rig-eyes',{scaleY:.08,duration:.09,ease:'power2.in'},t);
+        tl.to('.lpv4-02-actor .rig-eyes',{scaleY:1,duration:.13,ease:'power2.out'},t+.09);
+      }
+      for(let t=.4;t<15.651958-1.1;t+=2.7){
+        tl.to('.lpv4-02-actor .rig-torso',{rotation:1.8,y:-3,duration:.55,ease:'sine.inOut'},t);
+        tl.to('.lpv4-02-actor .rig-torso',{rotation:-1,y:0,duration:.65,ease:'sine.inOut'},t+.55);
+      }
+      // A greeting, a point toward the evidence, then an open-handed explanation.
+      tl.to('.lpv4-02-actor .rig-look',{x:-5,y:0,duration:.35}, 4.226029);
+      tl.to('.lpv4-02-actor .rig-arm-left',{rotation:-18,duration:.4}, 4.539068);
+      tl.to('.lpv4-02-actor .rig-arm-right',{rotation:-42,duration:.4,ease:'power3.out'}, 7.199901);
+      tl.to('.lpv4-02-actor .rig-look',{x:4,y:0,duration:.3}, 7.199901);
+      tl.to('.lpv4-02-actor .rig-arm-right',{rotation:-8,duration:.5}, 10.173773);
+      tl.to('.lpv4-02-actor .rig-arm-left',{rotation:18,duration:.4}, 10.486812);
+      tl.to('.lpv4-02-actor .rig-look',{x:0,y:-2,duration:.3}, 11.895488);
+      tl.to('.lpv4-02-actor .rig-arm-left',{rotation:0,duration:.4}, 13.147645);
+      tl.to('.lpv4-02-actor .rig-arm-right',{rotation:-27,duration:.3}, 13.460684);
+      tl.to('.lpv4-02-actor .rig-arm-right',{rotation:0,duration:.35}, 14.243282);
+      // Footfalls during the existing travel into each proof position.
+      for(let k=0;k<4;k++){const t=5.478185+k*.24;
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:-8,rotation:k%2?8:-8,duration:.11},t);
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:0,rotation:0,duration:.13},t+.11);
+      }
+
+      tl.set('.lpv4-02-actor .rig-head',{svgOrigin:'209 207'},0);
+      tl.to('.lpv4-02-actor .rig-arm-left',{rotation:24,duration:.3},1.2);
+      tl.to('.lpv4-02-actor .rig-arm-left',{rotation:0,duration:.4},2.3);
+
+      const finalRetime=1.218311345;
+      tl.getChildren(false,true,false).forEach(t=>{const at=t.startTime()*finalRetime;t.duration(t.duration()*finalRetime);t.startTime(at);});
+
+      const v4Mouth = [0.943,1.25,1.25,1.183,0.758,1.026,1.25,1.25,1.25,1.25,1.25,1.25,1.25,0.845,0.795,0.566,0.287,1.23,1.25,0.819,0.865,1.008,1.189,0.469,0.172,0.16,0.16,0.16,0.16,0.16,0.677,1.25,1.25,0.927,0.33,0.675,0.58,1.25,1.25,0.579,1.212,1.057,0.496,1.067,1.25,1.25,1.25,1.066,1.25,0.949,0.495,0.383,0.391,0.162,0.168,0.167,0.165,0.163,0.161,0.259,1.25,1.087,0.73,1.25,1.25,0.847,1.25,1.25,1.25,1.25,1.25,1.104,0.834,0.803,1.25,1.25,1.25,1.066,0.846,0.77,1.25,1.25,1.25,0.923,0.883,1.118,1.25,1.25,0.766,1.111,1.018,0.538,0.25,1.021,1.25,1.25,0.765,0.763,0.964,0.848,0.695,0.857,1.183,0.617,1.25,1.25,1.25,1.25,0.871,0.645,0.651,0.939,1.25,0.635,0.166,0.841,0.708,1.136,1.063,0.764,0.493,0.174,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.533,1.25,1.25,1.101,0.772,1.25,1.25,1.25,0.87,0.934,1.25,0.848,1.05,0.935,0.46,0.707,1.241,1.25,1.25,1.25,0.825,0.757,1.25,1.25,0.185,0.405,1.199,1.25,0.894,0.284,0.896,0.993,1.023,0.768,0.998,1.082,0.848,0.331,1.123,1.25,1.25,0.673,0.31,1.25,1.25,1.159,1.097,0.895,0.745,0.312,1.25,1.165,0.936,1.25,0.337,0.447,0.714,0.869,1.25,0.885,1.25,0.341,0.415,0.86,1.25,1.089,1.031,1.25,0.904,1.063,0.639,0.599,1.25,0.782,0.744,0.725,1.189,0.926,0.573,0.49,0.172,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.161,1.25,1.25,1.049,0.875,1.25,1.25,0.794,0.214,0.883,1.25,1.25,1.25,1.25,1.25,1.074,0.996,0.879,0.905,0.624,1.25,1.25,1.25,1.25,1.25,0.984,1.25,1.25,1.25,0.66,0.295,1.057,0.862,0.732,0.644,0.551,0.303,0.161,0.16,0.16,0.16,0.712,1.242,0.553,1.25,0.388,0.929,1.25,0.179,0.415,1.045,1.25,0.615,0.699,0.964,1.048,1.071,0.882,1.174,1.21,0.4,0.309,0.848,0.718,0.516,0.177,0.16];
+      v4Mouth.forEach((v,i)=>tl.to('.lpv4-02-actor .rig-mouth',{scaleY:v,duration:1/15,ease:'none'},i/15));
+      tl.to('.lpv4-02-actor .rig-mouth',{scaleY:.16,duration:.12}, 18.928958);
+})();
+</script>
+</template>

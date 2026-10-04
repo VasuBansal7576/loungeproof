@@ -1,0 +1,714 @@
+{
+  "evaluatedAt": "2026-10-03T15:09:45.787Z",
+  "inputNote": "Original public bank documents in live Sanity; invented traveller facts. No customer account or operator admission test.",
+  "passDefinition": "Expected deterministic status, live Sanity data, successful Context probe, and observed completed initial_context and knowledge_base_read tool calls. Answer quality is reviewed separately.",
+  "planned": 4,
+  "total": 4,
+  "passed": 4,
+  "results": [
+    {
+      "name": "ICICI: deposits route qualifies with zero spend",
+      "passed": true,
+      "facts": {
+        "card": "icici-wealth-world",
+        "travelDate": "2026-10-10",
+        "country": "India",
+        "airport": "DEL",
+        "terminal": "T3",
+        "flightType": "domestic",
+        "accountType": "savings",
+        "openedOn": "2025-09-01",
+        "programMaintained": true,
+        "familyEligibilityMaintained": null,
+        "eligibleSpend": 0,
+        "balance": 1200000,
+        "relationship": 0,
+        "visitsUsed": 1,
+        "guests": 0,
+        "question": "My relationship manager says spending is mandatory. With zero eligible spending and ₹12 lakh in qualifying deposits and balance, how does the reviewed individual savings rule apply?"
+      },
+      "expected": "qualified",
+      "verdict": {
+        "status": "qualified",
+        "title": "Published benefit conditions met",
+        "summary": "You have 1 of 2 quarterly visits remaining under the supplied facts. The exact lounge remains unverified.",
+        "questions": [],
+        "trace": [
+          {
+            "label": "Applicable policy",
+            "state": "pass",
+            "detail": "Wealth World • individual savings. Effective 2025-08-01; reviewed 2026-10-03.",
+            "sourceId": "icici-wealth"
+          },
+          {
+            "label": "Previous-quarter debit spend",
+            "state": "fail",
+            "detail": "₹0 / ₹10,000 required in 2026-07-01 to 2026-09-30.",
+            "sourceId": "icici-wealth"
+          },
+          {
+            "label": "Deposits + account balance",
+            "state": "pass",
+            "detail": "₹12,00,000 / ₹10,00,000 required.",
+            "sourceId": "icici-wealth"
+          },
+          {
+            "label": "Total programme relationship",
+            "state": "fail",
+            "detail": "₹0 / ₹50,00,000 required.",
+            "sourceId": "icici-wealth"
+          },
+          {
+            "label": "Quarterly visit allowance",
+            "state": "pass",
+            "detail": "1 used out of 2; 1 remaining.",
+            "sourceId": "icici-wealth"
+          },
+          {
+            "label": "Exact lounge match",
+            "state": "unknown",
+            "detail": "No reviewed directory match for this exact terminal and flight section."
+          },
+          {
+            "label": "Entry method",
+            "state": "info",
+            "detail": "Present the exact eligible card at a bank-listed domestic airport lounge; bank validation and lounge admission still apply.",
+            "sourceId": "icici-wealth"
+          }
+        ],
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "label": "2026-07-01 to 2026-09-30"
+        },
+        "remaining": 1,
+        "policy": {
+          "_id": "policy-icici-savings",
+          "_type": "loungePolicy",
+          "card": "icici-wealth-world",
+          "title": "Wealth World • individual savings",
+          "issuer": "ICICI Bank",
+          "validFrom": "2025-08-01",
+          "reviewedAt": "2026-10-03",
+          "reviewBy": "2026-10-31",
+          "accountTypes": [
+            "savings"
+          ],
+          "openedOnOrAfter": "2025-08-01",
+          "programRequired": true,
+          "window": "previous-quarter",
+          "releaseDay": 5,
+          "quota": 2,
+          "alternatives": [
+            {
+              "kind": "amount",
+              "field": "eligibleSpend",
+              "min": 10000,
+              "label": "Previous-quarter debit spend"
+            },
+            {
+              "kind": "amount",
+              "field": "balance",
+              "min": 1000000,
+              "label": "Deposits + account balance"
+            },
+            {
+              "kind": "amount",
+              "field": "relationship",
+              "min": 5000000,
+              "label": "Total programme relationship"
+            }
+          ],
+          "waiver": "none",
+          "accessMethod": "Present the exact eligible card at a bank-listed domestic airport lounge; bank validation and lounge admission still apply.",
+          "spendNotes": "Use eligible debit card spending from the full preceding calendar quarter. Access starts on the fifth after quarter end.",
+          "sourceIds": [
+            "icici-wealth"
+          ],
+          "conflictIds": [],
+          "notes": []
+        },
+        "lounges": [],
+        "loungeStatus": "unverified",
+        "sources": [
+          {
+            "id": "icici-wealth",
+            "title": "ICICI Wealth Management World debit FAQ",
+            "url": "https://www.icici.bank.in/personal-banking/cards/debit-card/wealth-management-debit-card",
+            "publisher": "ICICI Bank",
+            "locator": "Lounge FAQ: account scope, alternatives, salary and family banking",
+            "retrievedAt": "2026-10-03T13:47:27.688373+00:00",
+            "sha256": "2bc0680109428e58dd8cfb8bfab4fdaf9e00ea4f50ca030f03e1f04e8bed9538",
+            "role": "current"
+          }
+        ],
+        "conflicts": [],
+        "caveats": [
+          "These are published benefit conditions, not a live approval from your bank.",
+          "Your spend and visit count are supplied by you. Lounge capacity and entry validation remain with the operator.",
+          "This exact airport, terminal, and flight section has not been verified in the pilot directory. Check the bank list before travelling."
+        ]
+      },
+      "dataMode": "sanity-live",
+      "agent": {
+        "status": "live",
+        "answer": "Under the reviewed individual savings rule, you qualify through your ₹12 lakh in qualifying deposits plus account balance despite zero eligible spending. The three routes are alternatives: ₹10,000 previous-quarter debit spending OR ₹10 lakh deposits plus account balance OR ₹50 lakh total programme relationship. Meeting one suffices; spending is not mandatory for this account category. [icici-wealth]\n\nThe rule is effective from 1 August 2025 and was reviewed on 3 October 2026. Your savings account opened on 1 September 2025 meets the opening-date requirement, and you report maintaining the Wealth Management Programme. For travel on 10 October 2026, the preceding spend quarter is 1 July–30 September 2026, with access starting 5 October. Your ₹0 spending fails only the spending route; ₹12 lakh exceeds the separate ₹10 lakh balance threshold. [icici-wealth]\n\nThe authoritative verdict is qualified: you have used 1 of 2 quarterly visits, leaving 1. [icici-wealth]\n\nYour relationship manager’s statement conflicts with the reviewed FAQ’s individual savings alternatives. Ask the bank to reconcile that advice with the dated FAQ; the supplied statement does not change the reviewed verdict.\n\nDEL T3 domestic remains unverified in the pilot, which does not mean it is excluded from the bank directory. Exact lounge admission is separately subject to the reviewed directory and bank/operator validation; entry is not guaranteed. Present the exact eligible Wealth World card and check the bank list before travelling. [icici-wealth]",
+        "citations": [
+          "icici-wealth"
+        ],
+        "toolCalls": [
+          "initial_context",
+          "knowledge_base_read"
+        ]
+      },
+      "context": {
+        "status": "live",
+        "tools": [
+          "initial_context",
+          "knowledge_base_read",
+          "knowledge_base_search"
+        ]
+      },
+      "durationMs": 37006
+    },
+    {
+      "name": "HDFC: no spend despite legacy annual marketing",
+      "passed": true,
+      "facts": {
+        "card": "hdfc-regalia-gold",
+        "travelDate": "2026-10-10",
+        "country": "India",
+        "airport": "DEL",
+        "terminal": "T3",
+        "flightType": "domestic",
+        "accountType": "unknown",
+        "openedOn": "2025-02-10",
+        "programMaintained": null,
+        "familyEligibilityMaintained": null,
+        "eligibleSpend": 0,
+        "balance": null,
+        "relationship": null,
+        "visitsUsed": 1,
+        "guests": 0,
+        "question": "The old article says 12 annual lounge visits. Does that give me free domestic entry with zero spending for this October trip?"
+      },
+      "expected": "not-qualified",
+      "verdict": {
+        "status": "not-qualified",
+        "title": "Benefit conditions not met",
+        "summary": "None of the reviewed qualification routes is met for 2026-07-01 to 2026-09-30. Only settled retail debit transactions count. EMI transactions do not count. The settlement date determines the qualifying quarter.",
+        "questions": [],
+        "trace": [
+          {
+            "label": "Applicable policy",
+            "state": "pass",
+            "detail": "Regalia Gold • India lounge benefit. Effective 2026-07-01; reviewed 2026-10-03.",
+            "sourceId": "hdfc-regalia-gold-2026"
+          },
+          {
+            "label": "Previous-quarter settled retail spend",
+            "state": "fail",
+            "detail": "₹0 / ₹60,000 required in 2026-07-01 to 2026-09-30.",
+            "sourceId": "hdfc-regalia-gold-2026"
+          }
+        ],
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "label": "2026-07-01 to 2026-09-30"
+        },
+        "remaining": null,
+        "policy": {
+          "_id": "policy-hdfc-regalia-gold-202607",
+          "_type": "loungePolicy",
+          "card": "hdfc-regalia-gold",
+          "title": "Regalia Gold • India lounge benefit",
+          "issuer": "HDFC Bank",
+          "validFrom": "2026-07-01",
+          "reviewedAt": "2026-10-03",
+          "reviewBy": "2026-10-31",
+          "accountTypes": [
+            "savings",
+            "salary",
+            "family-savings",
+            "unknown"
+          ],
+          "openedOnOrAfter": null,
+          "programRequired": false,
+          "window": "previous-quarter",
+          "releaseDay": 1,
+          "quota": 3,
+          "alternatives": [
+            {
+              "kind": "amount",
+              "field": "eligibleSpend",
+              "min": 60000,
+              "label": "Previous-quarter settled retail spend"
+            }
+          ],
+          "waiver": "last-month-next-quarter-conditional",
+          "accessMethod": "Swipe the Regalia Gold card at a listed lounge. A ₹2 validation charge is reversed. No lounge vouchers are issued under these terms.",
+          "spendNotes": "Only settled retail debit transactions count. EMI transactions do not count. The settlement date determines the qualifying quarter.",
+          "sourceIds": [
+            "hdfc-regalia-gold-2026",
+            "hdfc-check-spend"
+          ],
+          "conflictIds": [
+            "conflict-hdfc-annual-quarterly"
+          ],
+          "notes": [
+            "New cards opened in the last month of the prior quarter may be exempted; verify entitlement with the bank."
+          ]
+        },
+        "lounges": [],
+        "loungeStatus": "unverified",
+        "sources": [
+          {
+            "id": "hdfc-check-spend",
+            "title": "Regalia Gold NetBanking eligibility guide",
+            "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/rg-domestic-lounge-netbanking-process.pdf",
+            "publisher": "HDFC Bank",
+            "locator": "Page 1: ₹60,000 in a calendar quarter, next-quarter access",
+            "retrievedAt": "2026-10-03T13:45:04.801028+00:00",
+            "sha256": "ac4a53764287b4fb17c18c68dd469bb2076488bd41a8b23a6b59413877261faf",
+            "role": "current"
+          },
+          {
+            "id": "hdfc-legacy",
+            "title": "Regalia Gold travel article • April 2024",
+            "url": "https://www.hdfcbank.com/personal/resources/learning-centre/pay/why-is-regalia-gold-credit-card-the-best-travel-credit-card",
+            "publisher": "HDFC Bank",
+            "locator": "Historical article: 12 annual India visits",
+            "retrievedAt": "2026-10-03T13:47:27.695271+00:00",
+            "sha256": "ecc895cdd6ac5f2415e5a823a932101ef5b05573d2db7d9cde6dd621d38971a7",
+            "role": "historical"
+          },
+          {
+            "id": "hdfc-regalia-gold-2026",
+            "title": "Regalia Gold lounge terms • July 2026",
+            "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/pdfs/lounge-t-and-cs-and-list-Regalia-Gold.pdf",
+            "publisher": "HDFC Bank",
+            "locator": "Page 1: new terms effective 01-07-2026",
+            "retrievedAt": "2026-10-03T13:45:04.238251+00:00",
+            "sha256": "39d3bf8aee91f086f2559c272286c60a3136f3d5ef3ab7de890d4b2b312647e9",
+            "role": "current"
+          }
+        ],
+        "conflicts": [
+          {
+            "_id": "conflict-hdfc-annual-quarterly",
+            "_type": "policyConflict",
+            "card": "hdfc-regalia-gold",
+            "title": "Annual marketing claim vs dated quarterly eligibility",
+            "sourceIds": [
+              "hdfc-legacy",
+              "hdfc-regalia-gold-2026"
+            ],
+            "status": "resolved",
+            "decision": "Use the detailed dated July 2026 lounge terms for trips on or after 1 July 2026. The 2024 article does not establish unconditional access today. The annual total alone omits preceding-quarter spend, per-quarter quota, EMI exclusions and issuance exception. This decision is an editorial interpretation, not bank confirmation.",
+            "decidedAt": "2026-10-03"
+          }
+        ],
+        "caveats": [
+          "These are published benefit conditions, not a live approval from your bank.",
+          "Your spend and visit count are supplied by you. Lounge capacity and entry validation remain with the operator."
+        ]
+      },
+      "dataMode": "sanity-live",
+      "agent": {
+        "status": "live",
+        "answer": "No. For your 10 October 2026 trip, the reviewed verdict is not-qualified: your ₹0 eligible spend falls short of ₹60,000 required during 1 July–30 September 2026. Settlement dates determine the qualifying quarter, and EMI transactions are excluded. [hdfc-regalia-gold-2026]\n\nThe April 2024 article’s 12 annual visits do not establish unconditional free entry. The detailed terms effective 1 July 2026 take precedence and require qualifying spend to earn 3 accesses in the following calendar quarter. Your one reported visit used does not remove that spend requirement. [hdfc-legacy] [hdfc-regalia-gold-2026]\n\nThe conditional new-card provision does not apply to your supplied opening date of 10 February 2025 for this October trip. Even for cards opened in the relevant quarter’s final month, “may be exempted” requires bank confirmation; it is not guaranteed. [hdfc-regalia-gold-2026]\n\nDEL T3 domestic is unverified in this limited pilot, meaning this exact location has not been reviewed—not that the bank directory excludes it. Exact lounge admission is separately subject to the reviewed directory and operator validation. This assessment is not a guarantee of entry.",
+        "citations": [
+          "hdfc-regalia-gold-2026",
+          "hdfc-legacy"
+        ],
+        "toolCalls": [
+          "initial_context",
+          "knowledge_base_read"
+        ]
+      },
+      "context": {
+        "status": "live",
+        "tools": [
+          "initial_context",
+          "knowledge_base_read",
+          "knowledge_base_search"
+        ]
+      },
+      "durationMs": 41609
+    },
+    {
+      "name": "HDFC: September issue is only a possible exemption",
+      "passed": true,
+      "facts": {
+        "card": "hdfc-regalia-gold",
+        "travelDate": "2026-10-10",
+        "country": "India",
+        "airport": "DEL",
+        "terminal": "T3",
+        "flightType": "domestic",
+        "accountType": "unknown",
+        "openedOn": "2026-09-05",
+        "programMaintained": null,
+        "familyEligibilityMaintained": null,
+        "eligibleSpend": 0,
+        "balance": null,
+        "relationship": null,
+        "visitsUsed": 1,
+        "guests": 0,
+        "question": "My card was issued in September and I have zero spending. Am I definitely exempt from the October spend condition?"
+      },
+      "expected": "needs-confirmation",
+      "verdict": {
+        "status": "needs-confirmation",
+        "title": "Confirm the new-card exception",
+        "summary": "Your normal spend route is not established. The bank may waive it for this new-card cohort; verify your entitlement in NetBanking.",
+        "questions": [],
+        "trace": [
+          {
+            "label": "Applicable policy",
+            "state": "pass",
+            "detail": "Regalia Gold • India lounge benefit. Effective 2026-07-01; reviewed 2026-10-03.",
+            "sourceId": "hdfc-regalia-gold-2026"
+          },
+          {
+            "label": "Possible new-card exception",
+            "state": "unknown",
+            "detail": "The terms say cards opened in the last month of the previous quarter may be exempted. Bank confirmation is needed; this is not an automatic approval.",
+            "sourceId": "hdfc-regalia-gold-2026"
+          },
+          {
+            "label": "Previous-quarter settled retail spend",
+            "state": "fail",
+            "detail": "₹0 / ₹60,000 required in 2026-07-01 to 2026-09-30.",
+            "sourceId": "hdfc-regalia-gold-2026"
+          }
+        ],
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "label": "2026-07-01 to 2026-09-30"
+        },
+        "remaining": null,
+        "policy": {
+          "_id": "policy-hdfc-regalia-gold-202607",
+          "_type": "loungePolicy",
+          "card": "hdfc-regalia-gold",
+          "title": "Regalia Gold • India lounge benefit",
+          "issuer": "HDFC Bank",
+          "validFrom": "2026-07-01",
+          "reviewedAt": "2026-10-03",
+          "reviewBy": "2026-10-31",
+          "accountTypes": [
+            "savings",
+            "salary",
+            "family-savings",
+            "unknown"
+          ],
+          "openedOnOrAfter": null,
+          "programRequired": false,
+          "window": "previous-quarter",
+          "releaseDay": 1,
+          "quota": 3,
+          "alternatives": [
+            {
+              "kind": "amount",
+              "field": "eligibleSpend",
+              "min": 60000,
+              "label": "Previous-quarter settled retail spend"
+            }
+          ],
+          "waiver": "last-month-next-quarter-conditional",
+          "accessMethod": "Swipe the Regalia Gold card at a listed lounge. A ₹2 validation charge is reversed. No lounge vouchers are issued under these terms.",
+          "spendNotes": "Only settled retail debit transactions count. EMI transactions do not count. The settlement date determines the qualifying quarter.",
+          "sourceIds": [
+            "hdfc-regalia-gold-2026",
+            "hdfc-check-spend"
+          ],
+          "conflictIds": [
+            "conflict-hdfc-annual-quarterly"
+          ],
+          "notes": [
+            "New cards opened in the last month of the prior quarter may be exempted; verify entitlement with the bank."
+          ]
+        },
+        "lounges": [],
+        "loungeStatus": "unverified",
+        "sources": [
+          {
+            "id": "hdfc-check-spend",
+            "title": "Regalia Gold NetBanking eligibility guide",
+            "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/rg-domestic-lounge-netbanking-process.pdf",
+            "publisher": "HDFC Bank",
+            "locator": "Page 1: ₹60,000 in a calendar quarter, next-quarter access",
+            "retrievedAt": "2026-10-03T13:45:04.801028+00:00",
+            "sha256": "ac4a53764287b4fb17c18c68dd469bb2076488bd41a8b23a6b59413877261faf",
+            "role": "current"
+          },
+          {
+            "id": "hdfc-legacy",
+            "title": "Regalia Gold travel article • April 2024",
+            "url": "https://www.hdfcbank.com/personal/resources/learning-centre/pay/why-is-regalia-gold-credit-card-the-best-travel-credit-card",
+            "publisher": "HDFC Bank",
+            "locator": "Historical article: 12 annual India visits",
+            "retrievedAt": "2026-10-03T13:47:27.695271+00:00",
+            "sha256": "ecc895cdd6ac5f2415e5a823a932101ef5b05573d2db7d9cde6dd621d38971a7",
+            "role": "historical"
+          },
+          {
+            "id": "hdfc-regalia-gold-2026",
+            "title": "Regalia Gold lounge terms • July 2026",
+            "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/pdfs/lounge-t-and-cs-and-list-Regalia-Gold.pdf",
+            "publisher": "HDFC Bank",
+            "locator": "Page 1: new terms effective 01-07-2026",
+            "retrievedAt": "2026-10-03T13:45:04.238251+00:00",
+            "sha256": "39d3bf8aee91f086f2559c272286c60a3136f3d5ef3ab7de890d4b2b312647e9",
+            "role": "current"
+          }
+        ],
+        "conflicts": [
+          {
+            "_id": "conflict-hdfc-annual-quarterly",
+            "_type": "policyConflict",
+            "card": "hdfc-regalia-gold",
+            "title": "Annual marketing claim vs dated quarterly eligibility",
+            "sourceIds": [
+              "hdfc-legacy",
+              "hdfc-regalia-gold-2026"
+            ],
+            "status": "resolved",
+            "decision": "Use the detailed dated July 2026 lounge terms for trips on or after 1 July 2026. The 2024 article does not establish unconditional access today. The annual total alone omits preceding-quarter spend, per-quarter quota, EMI exclusions and issuance exception. This decision is an editorial interpretation, not bank confirmation.",
+            "decidedAt": "2026-10-03"
+          }
+        ],
+        "caveats": [
+          "These are published benefit conditions, not a live approval from your bank.",
+          "Your spend and visit count are supplied by you. Lounge capacity and entry validation remain with the operator."
+        ]
+      },
+      "dataMode": "sanity-live",
+      "agent": {
+        "status": "live",
+        "answer": "No—your exemption is not definite. Your 5 September 2026 opening date falls in the final month of July–September, so you may qualify for a spend waiver for October–December. The terms say “may be exempted”; HDFC must confirm it. Your reviewed status remains needs-confirmation. [hdfc-regalia-gold-2026]\n\nFor your 10 October trip, the normal requirement is ₹60,000 in eligible settled retail spending from 1 July through 30 September 2026. Your ₹0 does not meet it. Check your Regalia Gold lounge entitlement in NetBanking and obtain bank confirmation of the new-card waiver before relying on access. [hdfc-regalia-gold-2026] [hdfc-check-spend]\n\nThe current allowance is up to three visits per quarter once eligibility is established; your reported one used visit does not establish eligibility. The detailed terms effective 1 July 2026 take precedence over older annual marketing claims. [hdfc-regalia-gold-2026]\n\nExact lounge admission is separately subject to the reviewed directory and operator validation. DEL T3 is unverified in this pilot, meaning this exact location has not been reviewed—not that the bank directory excludes it. Entry is not guaranteed.",
+        "citations": [
+          "hdfc-regalia-gold-2026",
+          "hdfc-check-spend"
+        ],
+        "toolCalls": [
+          "initial_context",
+          "knowledge_base_read"
+        ]
+      },
+      "context": {
+        "status": "live",
+        "tools": [
+          "initial_context",
+          "knowledge_base_read",
+          "knowledge_base_search"
+        ]
+      },
+      "durationMs": 39365
+    },
+    {
+      "name": "Axis: previous three full months and exact DEL T3 lounge",
+      "passed": true,
+      "facts": {
+        "card": "axis-priority",
+        "travelDate": "2026-10-10",
+        "country": "India",
+        "airport": "DEL",
+        "terminal": "T3",
+        "flightType": "domestic",
+        "accountType": "unknown",
+        "openedOn": "2025-01-15",
+        "programMaintained": null,
+        "familyEligibilityMaintained": null,
+        "eligibleSpend": 12000,
+        "balance": null,
+        "relationship": null,
+        "visitsUsed": 0,
+        "guests": 0,
+        "question": "Which spending months count for this October trip, how many visits remain, and is Encalm at Delhi T3 domestic listed for my card?"
+      },
+      "expected": "qualified",
+      "verdict": {
+        "status": "qualified",
+        "title": "Published benefit conditions met",
+        "summary": "You have 2 of 2 quarterly visits remaining under the supplied facts. Your selected terminal has a listed lounge.",
+        "questions": [],
+        "trace": [
+          {
+            "label": "Applicable policy",
+            "state": "pass",
+            "detail": "Priority debit • revised spend requirement. Effective 2026-09-01; reviewed 2026-10-03.",
+            "sourceId": "axis-priority-2026"
+          },
+          {
+            "label": "New-card exception",
+            "state": "info",
+            "detail": "New-card spend waiver ended 2025-04-30.",
+            "sourceId": "axis-priority-2026"
+          },
+          {
+            "label": "Billed debit spend in previous three calendar months",
+            "state": "pass",
+            "detail": "₹12,000 / ₹10,000 required in 2026-07-01 to 2026-09-30.",
+            "sourceId": "axis-priority-2026"
+          },
+          {
+            "label": "Quarterly visit allowance",
+            "state": "pass",
+            "detail": "0 used out of 2; 2 remaining.",
+            "sourceId": "axis-priority-2026"
+          },
+          {
+            "label": "Exact lounge match",
+            "state": "pass",
+            "detail": "Encalm Lounge • DEL T3 domestic • Table 3, page 4, row 23",
+            "sourceId": "axis-lounges"
+          },
+          {
+            "label": "Entry method",
+            "state": "info",
+            "detail": "Use the eligible Priority debit card at a lounge listed in Table 3. Entry is subject to bank validation and operator conditions.",
+            "sourceId": "axis-priority-2026"
+          }
+        ],
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "label": "2026-07-01 to 2026-09-30"
+        },
+        "remaining": 2,
+        "policy": {
+          "_id": "policy-axis-priority-202609",
+          "_type": "loungePolicy",
+          "card": "axis-priority",
+          "title": "Priority debit • revised spend requirement",
+          "issuer": "Axis Bank",
+          "validFrom": "2026-09-01",
+          "reviewedAt": "2026-10-03",
+          "reviewBy": "2026-10-31",
+          "accountTypes": [
+            "savings",
+            "salary",
+            "family-savings",
+            "unknown"
+          ],
+          "openedOnOrAfter": null,
+          "programRequired": false,
+          "window": "previous-three-months",
+          "releaseDay": 2,
+          "quota": 2,
+          "alternatives": [
+            {
+              "kind": "amount",
+              "field": "eligibleSpend",
+              "min": 10000,
+              "label": "Billed debit spend in previous three calendar months"
+            }
+          ],
+          "waiver": "issue-month-plus-three",
+          "accessMethod": "Use the eligible Priority debit card at a lounge listed in Table 3. Entry is subject to bank validation and operator conditions.",
+          "spendNotes": "From 1 October 2026, exclude UPI, wallet reloads, credit card bill payments and cash withdrawals. Use billed transactions in the previous three calendar months. Eligibility updates on the 2nd of each month; the 1st carries the previous month’s status.",
+          "sourceIds": [
+            "axis-priority-2026",
+            "axis-product",
+            "axis-lounges"
+          ],
+          "conflictIds": [],
+          "notes": []
+        },
+        "lounges": [
+          {
+            "_id": "lounge-axis-23",
+            "_type": "lounge",
+            "card": "axis-priority",
+            "airport": "DEL",
+            "terminal": "T3",
+            "flightType": "domestic",
+            "name": "Encalm Lounge",
+            "sourceId": "axis-lounges",
+            "locator": "Table 3, page 4, row 23"
+          }
+        ],
+        "loungeStatus": "listed",
+        "sources": [
+          {
+            "id": "axis-lounges",
+            "title": "Axis debit lounge directory",
+            "url": "https://www.axis.bank.in/docs/default-source/default-document-library/debit-card-lounge-list.pdf?sfvrsn=f43ad662_9",
+            "publisher": "Axis Bank",
+            "locator": "Table 3, page 4: Priority Debit Card / RuPay Platinum NRO",
+            "retrievedAt": "2026-10-03T13:45:05.604332+00:00",
+            "sha256": "884650461351eec08c3822c848beeb6757ff8cff4179e9319904ad8f99ff6a9f",
+            "role": "directory"
+          },
+          {
+            "id": "axis-priority-2026",
+            "title": "Priority debit revisions • September 2026",
+            "url": "https://www.axis.bank.in/docs/default-source/default-document-library/terms-and-conditions-for-nr-priority-debit-card.pdf?sfvrsn=5da9ec52_2",
+            "publisher": "Axis Bank",
+            "locator": "Page 1: lounge programme and excluded categories",
+            "retrievedAt": "2026-10-03T13:45:05.614597+00:00",
+            "sha256": "b622081df5cae473d92256083f5a982f0bea1aa1269ef8708d566ff08b13b4a9",
+            "role": "current"
+          },
+          {
+            "id": "axis-product",
+            "title": "Priority debit current product page",
+            "url": "https://www.axis.bank.in/cards/debit-card/priority-debit-card",
+            "publisher": "Axis Bank",
+            "locator": "Features and benefits: 2 domestic visits per quarter",
+            "retrievedAt": "2026-10-03T13:51:00.129746+00:00",
+            "sha256": "ac27f090614a0bbb88b35819ee1c472ea2a02ed27141aecee407dc6a455befbc",
+            "role": "current"
+          }
+        ],
+        "conflicts": [],
+        "caveats": [
+          "These are published benefit conditions, not a live approval from your bank.",
+          "Your spend and visit count are supplied by you. Lounge capacity and entry validation remain with the operator."
+        ]
+      },
+      "dataMode": "sanity-live",
+      "agent": {
+        "status": "live",
+        "answer": "For your 10 October 2026 trip, July, August and September count: 1 July–30 September 2026. Eligibility updates on 2 October; only 1 October carries September’s status. Your supplied ₹12,000 eligible billed debit spend exceeds the ₹10,000 requirement. From 1 October, UPI, wallet reloads, credit card bill payments and cash/ATM transactions are excluded. [axis-priority-2026]\n\nYou have 2 of 2 complimentary domestic visits remaining for the October–December quarter, with 0 used. The monthly eligibility update does not reset the quarterly visit allowance. [axis-product]\n\nYes, Encalm Lounge at Delhi (DEL) T3 domestic is listed for your selected Priority debit card in the reviewed directory: Table 3, page 4, row 23. [axis-lounges]\n\nThe reviewed verdict is qualified: published benefit conditions are met under your supplied facts. Your unknown account type does not add a missing requirement for this reviewed card variant. Exact lounge admission is separately subject to the reviewed directory, bank/card validation and operator validation, including capacity; entry is not guaranteed. [axis-priority-2026] [axis-lounges]",
+        "citations": [
+          "axis-priority-2026",
+          "axis-product",
+          "axis-lounges"
+        ],
+        "toolCalls": [
+          "initial_context",
+          "knowledge_base_read"
+        ]
+      },
+      "context": {
+        "status": "live",
+        "tools": [
+          "initial_context",
+          "knowledge_base_read",
+          "knowledge_base_search"
+        ]
+      },
+      "durationMs": 36490
+    }
+  ],
+  "axisRecheckedAt": "2026-10-03T15:16:11.829Z",
+  "answerReview": {
+    "reviewedAt": "2026-10-03T15:17:04.550Z",
+    "method": "Manual source comparison of each saved answer after Knowledge Base corrections. Not an automated accuracy score.",
+    "checks": [
+      "ICICI balance OR route qualifies with zero spend",
+      "HDFC July 2026 terms take precedence over older annual marketing",
+      "HDFC September issuance exemption remains conditional on bank confirmation",
+      "Axis July–September window, 2 quarterly visits, DEL T3 Encalm Table 3 row 23",
+      "Pilot directory absence does not imply bank exclusion",
+      "Axis issuance information is not an added account-type condition"
+    ],
+    "passed": 4,
+    "total": 4
+  }
+}

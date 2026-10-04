@@ -1,0 +1,426 @@
+{
+  "evaluatedAt": "2026-10-03T14:13:39.942Z",
+  "dataMode": "sanity-live",
+  "revision": "2026-10-03T14:13:39.929Z",
+  "inputNote": "Real public bank documents; invented traveller facts. No real bank-account or operator-entry tests.",
+  "total": 38,
+  "passed": 38,
+  "results": [
+    {
+      "name": "HDFC: 65k spend in preceding quarter qualifies",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: exact 60k threshold",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: 59,999 misses dated spend threshold",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: no spend despite legacy annual marketing",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: all three visits used",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: missing count does not invent remaining visits",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: September issue is only a possible exemption",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: August issue has no last-month exception",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: missing issue date is irrelevant if spend passes",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: missing issue date matters if spend fails",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: last-month issue exception is not carried to another quarter",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: pre-July trip cannot borrow current rule",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: guests need independent entitlement",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "HDFC: future trip after review horizon requires refresh",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "hdfc-check-spend",
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: deposits route qualifies with zero spend",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: relationship route qualifies with low deposits",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: spend alone qualifies with unknown other routes",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: unknown balance must not turn OR into false",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: salary cannot borrow savings balance route",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: salary spend threshold qualifies",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: Visa scope is never guessed",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: pre-August account not covered by FAQ",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: account opening date required for scope",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: account type must be asked",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: quarter release on October fifth",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: October fourth needs activation confirmation",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: family programme route can qualify",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "ICICI: family cannot borrow individual relationship values",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Axis: previous three full months and exact DEL T3 lounge",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "listed"
+    },
+    {
+      "name": "Axis: rolling window for November would differ from quarter",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Axis: first-day status carries from previous month",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Axis: exact ten-thousand threshold",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "listed"
+    },
+    {
+      "name": "Axis: July issue waiver lasts through October",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "listed"
+    },
+    {
+      "name": "Axis: June issue waiver expired after September",
+      "expected": "not-qualified",
+      "actual": "not-qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Axis: BLR T1 domestic is listed",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "listed"
+    },
+    {
+      "name": "Axis: BLR T2 domestic not inferred from T2 international",
+      "expected": "qualified",
+      "actual": "qualified",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Axis: outside India requires another policy",
+      "expected": "needs-confirmation",
+      "actual": "needs-confirmation",
+      "passed": true,
+      "sourceIds": [
+        "axis-lounges",
+        "axis-priority-2026",
+        "axis-product"
+      ],
+      "loungeStatus": "unverified"
+    },
+    {
+      "name": "Unknown card triggers exact variant question",
+      "expected": "needs-info",
+      "actual": "needs-info",
+      "passed": true,
+      "sourceIds": [],
+      "loungeStatus": "unverified"
+    }
+  ]
+}

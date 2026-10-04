@@ -1,0 +1,116 @@
+{
+  "bgm": null,
+  "voices": [
+    {
+      "frame": 1,
+      "id": "v4-problem",
+      "path": "assets/voice/v4-final/v4-problem.wav",
+      "duration_s": 32.35725,
+      "words": []
+    },
+    {
+      "frame": 2,
+      "id": "v4-guide",
+      "path": "assets/voice/v4-final/v4-guide.wav",
+      "duration_s": 13.828958,
+      "words": []
+    },
+    {
+      "frame": 3,
+      "id": "v4-02",
+      "path": "assets/voice/v4-final/v4-02.wav",
+      "duration_s": 19.068958,
+      "words": []
+    },
+    {
+      "frame": 4,
+      "id": "v4-03",
+      "path": "assets/voice/v4-final/v4-03.wav",
+      "duration_s": 20.992917,
+      "words": []
+    },
+    {
+      "frame": 5,
+      "id": "v4-04",
+      "path": "assets/voice/v4-final/v4-04.wav",
+      "duration_s": 19.997542,
+      "words": []
+    },
+    {
+      "frame": 6,
+      "id": "v4-05",
+      "path": "assets/voice/v4-final/v4-05.wav",
+      "duration_s": 17.678125,
+      "words": []
+    },
+    {
+      "frame": 7,
+      "id": "v4-06",
+      "path": "assets/voice/v4-final/v4-06.wav",
+      "duration_s": 19.816042,
+      "words": []
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 2,
+      "id": "v2-01",
+      "name": "whoosh",
+      "file": "assets/sfx/whoosh.mp3",
+      "source": "local",
+      "offset_s": 8.596397,
+      "duration_s": 0.57,
+      "volume": 0.2
+    },
+    {
+      "frame": 3,
+      "id": "v2-02",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 11.976001,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 4,
+      "id": "v2-03",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 12.197503,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 5,
+      "id": "v2-04",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 14.61868,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 6,
+      "id": "v2-05",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 9.989534,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 7,
+      "id": "v2-06",
+      "name": "chime",
+      "file": "assets/sfx/chime.mp3",
+      "source": "local",
+      "offset_s": 14.618616,
+      "duration_s": 2.5,
+      "volume": 0.16
+    }
+  ]
+}

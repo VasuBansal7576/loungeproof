@@ -1,0 +1,28 @@
+{
+  "duration": 143.73979200000002,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": ".lpv4-00-title",
+      "bySec": 0.6
+    },
+    {
+      "kind": "before",
+      "a": "#lpv4-01-question",
+      "b": "#lpv4-01-app"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": ".lpv4-03-title"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#lpv4-02-unverified"
+    },
+    {
+      "kind": "keepsMoving",
+      "withinSelector": "#root",
+      "maxStaticSec": 4
+    }
+  ]
+}

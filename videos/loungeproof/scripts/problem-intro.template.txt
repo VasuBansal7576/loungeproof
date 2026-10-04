@@ -1,0 +1,85 @@
+<template>
+  <style>
+    @font-face{font-family:'lpv4-00-DM';src:url('assets/fonts/dm-sans.ttf') format('truetype');font-weight:100 900;font-display:swap}
+    #root{position:relative;width:100%;height:100%;overflow:hidden;font-family:'lpv4-00-DM';color:#f3f5fa}
+    .clip{position:absolute;inset:0;width:1920px;height:1080px}
+    .lpv4-00-ground{background:#0d1019}
+    .lpv4-00-label{position:absolute;left:76px;top:72px;font-size:25px;letter-spacing:3px;color:#aab3c8;font-weight:700}
+    .lpv4-00-title{position:absolute;left:76px;top:190px;width:840px;font-size:96px;line-height:1.06;letter-spacing:-4px;font-weight:850}
+    .lpv4-00-title span{display:block;color:#f8f36b}
+    .lpv4-00-explain{position:absolute;left:80px;top:465px;width:730px;font-size:37px;line-height:1.35;color:#aab3c8}
+    .lpv4-00-card{position:absolute;left:1020px;top:188px;width:820px;height:210px;border:2px solid #3452ff;border-radius:22px;padding:30px 36px;background:#151a2a}
+    .lpv4-00-card small{display:block;font-size:24px;letter-spacing:3px;color:#aab3c8;margin-bottom:15px}
+    .lpv4-00-card strong{font-size:48px;line-height:1.1;font-weight:800;display:block}
+    .lpv4-00-fineprint{position:absolute;left:1020px;top:424px;color:#f8f36b;font-size:23px;letter-spacing:2px;font-weight:800}
+    .lpv4-00-conditions{position:absolute;left:1020px;top:472px;display:grid;grid-template-columns:repeat(2,390px);gap:22px}
+    .lpv4-00-condition{height:130px;background:#3452ff;border-radius:14px;padding:18px 26px}
+    .lpv4-00-condition small{display:block;font-size:17px;line-height:1.2;font-weight:700;letter-spacing:2px;opacity:.8;margin-bottom:6px}
+    .lpv4-00-condition strong{font-size:30px;line-height:1.12;display:block;font-weight:750}
+    .lpv4-00-conflict{position:absolute;left:1020px;top:798px;width:802px;font-size:28px;line-height:1.3;color:#aab3c8;border-left:5px solid #f8f36b;padding-left:20px}
+    .lpv4-00-question{position:absolute;left:80px;top:674px;width:665px;font-size:44px;font-weight:750;line-height:1.2}
+    .lpv4-00-question small{display:block;color:#f8f36b;font-size:22px;letter-spacing:2px;margin-bottom:15px}
+    .lpv4-00-pip{position:absolute;left:750px;top:615px;width:290px;height:290px}
+    .lpv4-00-solution{position:absolute;left:76px;top:928px;width:1768px;height:102px;background:#f8f36b;color:#0d1019;border-radius:14px;padding:22px 30px;display:flex;align-items:center;justify-content:space-between}
+    .lpv4-00-solution strong{font-size:36px;font-weight:850}
+    .lpv4-00-solution span{font-size:28px;font-weight:650}
+  </style>
+  <div id="root" data-composition-id="lpv4-00" data-width="1920" data-height="1080" data-duration="__DURATION__">
+    <div id="lpv4-00-background" class="clip lpv4-00-ground" data-start="0" data-duration="__DURATION__" data-track-index="0"></div>
+    <div id="lpv4-00-stage" class="clip" data-start="0" data-duration="__DURATION__" data-track-index="1">
+      <div class="lpv4-00-label">THE PROBLEM / AIRPORT LOUNGE ELIGIBILITY</div>
+      <h1 class="lpv4-00-title">Your card says<span>lounge access.</span></h1>
+      <p class="lpv4-00-explain">Your trip still has to meet the bank’s conditions.</p>
+      <div class="lpv4-00-card"><small>THE ADVERTISED PERK</small><strong>COMPLIMENTARY LOUNGE ACCESS</strong></div>
+      <div class="lpv4-00-fineprint">THE CONDITIONS BEHIND IT</div>
+      <div class="lpv4-00-conditions">
+        <div class="lpv4-00-condition"><small>SPENDING</small><strong>The qualifying window</strong></div>
+        <div class="lpv4-00-condition"><small>VISITS</small><strong>What’s left this quarter</strong></div>
+        <div class="lpv4-00-condition"><small>LOCATION</small><strong>Your exact terminal</strong></div>
+        <div class="lpv4-00-condition"><small>POLICY DATE</small><strong>Which terms apply?</strong></div>
+      </div>
+      <div class="lpv4-00-conflict">An older bank page can tell a different story.</div>
+      <div class="lpv4-00-question"><small>THE QUESTION WE ADDRESS</small>Which rule applies to this trip?</div>
+      <div class="lpv4-00-pip">__RIG__</div>
+      <div class="lpv4-00-solution"><strong>LoungeProof.</strong><span>Exact card → Dated rule → Bank evidence</span></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+  <script>
+    (function(){
+      const tl=gsap.timeline({paused:true});
+      window.__timelines=window.__timelines||{};
+      window.__timelines['lpv4-00']=tl;
+      const D=__DURATION__;
+      tl.fromTo('.lpv4-00-title',{y:25,opacity:0},{y:0,opacity:1,duration:.5},0);
+      tl.fromTo('.lpv4-00-label',{opacity:0},{opacity:1,duration:.3},0);
+      tl.fromTo('.lpv4-00-card',{x:60,opacity:0,rotation:3},{x:0,opacity:1,rotation:0,duration:.8,ease:'power3.out'},.5);
+      tl.to('.lpv4-00-card',{rotation:.7,duration:3,ease:'sine.inOut',repeat:9,yoyo:true},1.3);
+      tl.fromTo('.lpv4-00-explain',{y:16,opacity:0},{y:0,opacity:1,duration:.55},D*.2);
+      tl.fromTo('.lpv4-00-fineprint',{opacity:0},{opacity:1,duration:.45},D*.27);
+      tl.fromTo('.lpv4-00-condition',{y:-20,opacity:0},{y:0,opacity:1,duration:.6,stagger:.65,ease:'power3.out'},D*.28);
+      tl.fromTo('.lpv4-00-conflict',{x:30,opacity:0},{x:0,opacity:1,duration:.6},D*.49);
+      tl.fromTo('.lpv4-00-question',{y:22,opacity:0},{y:0,opacity:1,duration:.6},D*.61);
+      tl.fromTo('.lpv4-00-pip',{y:18,opacity:0},{y:0,opacity:1,duration:.7},.9);
+      tl.fromTo('.lpv4-00-solution',{y:35,opacity:0},{y:0,opacity:1,duration:.7},D*.78);
+      tl.set('.lpv4-00-actor .rig-mouth',{scaleY:.16,svgOrigin:'209 239'},0);
+      tl.set('.lpv4-00-actor .rig-eyes',{scaleY:1,svgOrigin:'209 206'},0);
+      tl.set('.lpv4-00-actor .rig-torso',{svgOrigin:'235 355'},0);
+      tl.set('.lpv4-00-actor .rig-head',{svgOrigin:'209 207'},0);
+      tl.set('.lpv4-00-actor .rig-arm-right',{svgOrigin:'318 240'},0);
+      for(let t=2;t<D-.4;t+=3.2){
+        tl.to('.lpv4-00-actor .rig-eyes',{scaleY:.08,duration:.09},t);
+        tl.to('.lpv4-00-actor .rig-eyes',{scaleY:1,duration:.13},t+.09);
+      }
+      for(let t=1.3;t<D-1.3;t+=2.4){
+        tl.to('.lpv4-00-actor .rig-torso',{rotation:1.5,y:-3,duration:.6,ease:'sine.inOut'},t);
+        tl.to('.lpv4-00-actor .rig-torso',{rotation:-1,y:0,duration:.6,ease:'sine.inOut'},t+.6);
+      }
+      tl.to('.lpv4-00-actor .rig-head',{rotation:-7,duration:.6},D*.6);
+      tl.to('.lpv4-00-actor .rig-head',{rotation:0,duration:.6},D*.76);
+      tl.to('.lpv4-00-actor .rig-arm-right',{rotation:-36,duration:.55},D*.78);
+      tl.to('.lpv4-00-actor .rig-look',{x:4,y:2,duration:.45},D*.78);
+      __MOUTH__
+    })();
+  </script>
+</template>

@@ -1,0 +1,34 @@
+{
+  "provider": "kokoro",
+  "speed": "1.0",
+  "lines": [
+    {
+      "id": "01",
+      "text": "Airport lounge benefits are hard to verify. A card name, an old article, and a relationship manager can point to different answers. LoungeProof checks the exact card and travel date, then shows the bank evidence behind each decision."
+    },
+    {
+      "id": "02",
+      "text": "Start with this ICICI World debit example. The traveller spends zero, but holds twelve lakh rupees in qualifying deposits and balance. For the reviewed individual savings policy, spending is one qualifying route. Balance is another. Unknown lounge details remain unverified."
+    },
+    {
+      "id": "03",
+      "text": "For HDFC Regalia Gold, an older article advertises twelve annual visits. The dated July twenty twenty six terms specify sixty thousand rupees of eligible spend in the previous quarter, and three visits per quarter. LoungeProof preserves that source decision. A possible new card exception still needs bank confirmation."
+    },
+    {
+      "id": "04",
+      "text": "Axis Priority uses the previous three calendar months. Its September revision also changes qualifying spending. The app checks remaining visits separately, then matches Delhi, terminal three, domestic departures to the correct table in the bank directory."
+    },
+    {
+      "id": "05",
+      "text": "Sanity stores the original sources, dated policy rules, exact lounge entries, and review decisions. A Knowledge Base turns that structured material into context. The evidence agent calls initial context, reads relevant entries, and explains the checked result with source citations."
+    },
+    {
+      "id": "06",
+      "text": "Thirty eight source based evaluation cases pass against the live Sanity dataset. Forty five automated tests cover boundaries and missing facts. The bank documents are real; traveller facts are invented examples. This India pilot does not connect to banking accounts or guarantee admission. Know the rule. Keep the proof."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  },
+  "voice": "am_michael"
+}

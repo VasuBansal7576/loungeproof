@@ -1,0 +1,91 @@
+{
+  "video": "videos/loungeproof/loungeproof-walkthrough-v4.mp4",
+  "inAppVideo": "public/walkthrough.mp4",
+  "durationSeconds": 143.766667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioChannels": 2,
+  "bytes": 42418962,
+  "sha256": "33f217ec8f17931b725a5bfb92ba570121d8510d528a2790e35c3bc64479bd2e",
+  "verification": {
+    "deterministicTests": [
+      45,
+      45
+    ],
+    "liveSanityPolicyCases": [
+      38,
+      38
+    ],
+    "liveAgentCases": [
+      4,
+      4
+    ],
+    "additionalRedesignedAxisAgentRun": "Completed initial_context and knowledge_base_read; answer reviewed",
+    "productionBuild": "pass",
+    "videoDecode": "pass",
+    "encodedFramesInspected": 9,
+    "videoChecks": {
+      "runtime": "pass",
+      "layout": "pass",
+      "contrast": "pass",
+      "motion": "pass",
+      "motionSamples": 300,
+      "lintErrors": 0,
+      "reviewedLintWarnings": 1,
+      "contrastChecksPassed": 36
+    },
+    "tour": {
+      "desktopPlayback": "pass; 143.766667 seconds, unmuted, playing, no error",
+      "clickSeek": "pass; Meet Pip 32.35725s; problem 0s",
+      "keyboardSeek": "pass; proof 123.92375s",
+      "escapeAndFocusReturn": "pass on desktop",
+      "mobileEscape": "pass; closes dialog",
+      "mobileViewport": [
+        390,
+        844
+      ],
+      "mobileDocumentWidth": 390,
+      "mobileSeek": "pass; HDFC 65.255166s",
+      "chapterCount": 7,
+      "screenshots": [
+        "reports/pip-v4/app-video.png",
+        "reports/pip-v4/mobile-video.png"
+      ]
+    },
+    "websiteAudit": "reports/pip-v3/browser-audit.json",
+    "underlyingDataAndLogicUnchanged": true
+  },
+  "bankDocuments": "Real public sources",
+  "travellerFacts": "Invented examples",
+  "published": false,
+  "revision": "Pip v4: problem-first opening, slower narration and retimed performance",
+  "voice": {
+    "provider": "local Kokoro",
+    "voice": "bf_emma",
+    "pitchLiftPercent": 4,
+    "websiteSpeech": false,
+    "mouthMotion": "actual WAV RMS at 15Hz",
+    "newNarrationSpeed": 0.82,
+    "reusedNarrationTempo": 0.82,
+    "averageWordsPerMinute": 148.6,
+    "openingWordsPerMinute": 139.1,
+    "tempoPreservesPitch": true
+  },
+  "render": {
+    "quality": "delivery",
+    "durationSeconds": 217.1,
+    "gpu": "hardware",
+    "canvas": [
+      1920,
+      1080
+    ]
+  },
+  "narrative": {
+    "problemAndSolutionOpeningSeconds": 32.35725,
+    "firstExampleStartsAtSeconds": 46.186208,
+    "chapters": 7
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-03",
+  "viewportWidths": [
+    360,
+    390,
+    768,
+    1470,
+    1920
+  ],
+  "horizontalOverflow": false,
+  "websiteAudioPlayers": 0,
+  "silentGuide": {
+    "keyboardOpen": "pass",
+    "escapeFocusReturn": "pass",
+    "cardAndDateFocus": "pass",
+    "directStepSelection": "pass",
+    "preResultCopy": "pass",
+    "editedFactsInvalidateAnswer": "pass",
+    "mobileVisualInspection": "pass"
+  },
+  "presets": {
+    "iciciBalanceRoute": "qualified; 1/2 remaining; exact lounge unverified",
+    "hdfcDatedTerms": "qualified; 2/3 remaining; exact lounge unverified",
+    "axisExactTrip": "qualified; 2/2 remaining; Encalm DEL T3 domestic, Table 3 page 4 row 23",
+    "visaSignature": "needs confirmation; no World/Mastercard inference"
+  },
+  "evidenceDesk": "desktop and mobile inspected",
+  "howItWorks": "desktop inspected",
+  "screenshots": [
+    "app-compact-empty.png",
+    "mobile-guide.png"
+  ]
+}

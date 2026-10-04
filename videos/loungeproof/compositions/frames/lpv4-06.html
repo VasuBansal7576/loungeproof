@@ -1,0 +1,163 @@
+<template>
+  <style>
+    @font-face { font-family: 'DM Sans'; src: url('assets/fonts/dm-sans.ttf') format('truetype'); font-weight: 100 900; font-style: normal; font-display: swap; }
+    #root { position: relative; width:100%; height:100%; overflow: hidden; color: #f3f5fa; font-family: 'DM Sans'; }
+    .clip { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    .lpv4-06-ground { background: #3452ff; }
+    .lpv4-06-ink { position: absolute; inset: 0; background: #0d1019; transform-origin: right center; }
+    .lpv4-06-rail { position: absolute; right: 0; top: 0; width: 590px; height: 1080px; background: #3452ff; }
+    .lpv4-06-counts { position: absolute; left: 96px; top: 145px; width: 1728px; height: 670px; }
+    .lpv4-06-count { position: absolute; left: 0; top: 0; width: 550px; height: 164px; transform-origin: left top; }
+    .lpv4-06-number { font-size: 96px; line-height: 1; font-weight: 850; letter-spacing: -5px; transform-origin: left top; font-variant-numeric: tabular-nums; }
+    .lpv4-06-label { position: absolute; left: 4px; top: 117px; font-size: 26px; line-height: 1.2; letter-spacing: 2px; font-weight: 650; white-space: nowrap; }
+    .lpv4-06-slash { color: #f8f36b; }
+    .lpv4-06-marker { position: absolute; left: 710px; top: 18px; width: 100px; height: 12px; background: #f8f36b; transform-origin: left center; }
+    .lpv4-06-pip { position: absolute; left: 1260px; top: 280px; width: 580px; height: 580px; transform-origin: center center; }
+    .lpv4-06-pip img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .lpv4-06-source { position: absolute; left: 96px; top: 340px; width: 1200px; height: 485px; }
+    .lpv4-06-source-line { font-size: 72px; line-height: 1.12; font-weight: 750; letter-spacing: -2.7px; margin: 0 0 26px; white-space: nowrap; }
+    .lpv4-06-invented { color: #f8f36b; }
+    .lpv4-06-boundary { width: 1130px; height: 4px; background: #f8f36b; transform-origin: left center; margin-top: 35px; }
+    .lpv4-06-scope { position: absolute; left: 0; top: 315px; width: 1150px; font-size: 32px; line-height: 1.5; font-weight: 500; }
+    .lpv4-06-final { position: absolute; left: 96px; top: 102px; width: 1160px; height: 710px; }
+    .lpv4-06-brand { font-size: 96px; font-weight: 800; letter-spacing: -5px; line-height: 1.1; }
+    .lpv4-06-rule, .lpv4-06-proof { position: absolute; left: 0; font-size: 140px; line-height: 1.05; font-weight: 850; letter-spacing: -7px; white-space: nowrap; }
+    .lpv4-06-rule { top: 220px; }
+    .lpv4-06-proof { top: 390px; color: #f8f36b; }
+    .lpv4-06-underline { position: absolute; left: 5px; top: 564px; width: 1040px; height: 10px; background: #f8f36b; transform-origin: left center; }
+    .lpv4-06-stamp-stage { position: absolute; left: 1380px; top: 710px; width: 360px; height: 114px; }
+    .lpv4-06-burst { position: absolute; inset: -22px; z-index: 1; background: radial-gradient(ellipse, #f8f36b 0%, transparent 68%); }
+    .lpv4-06-shadow { position: absolute; inset: 12px -4px -12px 4px; background: #0d1019; border-radius: 4px; transform-origin: center center; }
+    .lpv4-06-stamp { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; background: #f8f36b; color: #0d1019; border: 4px solid #0d1019; border-radius: 4px; font-size: 66px; letter-spacing: 8px; font-weight: 900; transform-origin: center center; }
+  </style>
+  <div id="root" data-composition-id="lpv4-06" data-duration="19.816042" data-width="1920" data-height="1080">
+    <div id="lpv4-06-clip-1" class="clip lpv4-06-ground" data-start="0" data-duration="19.816042" data-track-index="0">
+      <div class="lpv4-06-ink"><div class="lpv4-06-rail"></div></div>
+    </div>
+    <div id="lpv4-06-clip-2" class="clip" data-start="0" data-duration="19.816042" data-track-index="1">
+      <div class="lpv4-06-counts">
+        <div class="lpv4-06-count" id="lpv4-06-count1"><div class="lpv4-06-number">38 <span class="lpv4-06-slash">/</span> 38</div><div class="lpv4-06-label">LIVE POLICY CASES</div></div>
+        <div class="lpv4-06-count" id="lpv4-06-count2"><div class="lpv4-06-number">45 <span class="lpv4-06-slash">/</span> 45</div><div class="lpv4-06-label">AUTOMATED TESTS</div></div>
+        <div class="lpv4-06-count" id="lpv4-06-count3"><div class="lpv4-06-number">4 <span class="lpv4-06-slash">/</span> 4</div><div class="lpv4-06-label">LIVE AGENT CASES</div></div>
+        <div class="lpv4-06-marker"></div>
+      </div>
+      <div class="lpv4-06-source">
+        <div class="lpv4-06-source-line lpv4-06-real">Real bank documents.</div>
+        <div class="lpv4-06-source-line lpv4-06-invented">Invented traveller facts.</div>
+        <div class="lpv4-06-boundary"></div>
+        <div class="lpv4-06-scope">Published conditions.<br>Admission stays with bank + lounge.</div>
+      </div>
+      <div class="lpv4-06-final">
+        <div class="lpv4-06-brand">LoungeProof.</div>
+        <div class="lpv4-06-rule">Know the rule.</div>
+        <div class="lpv4-06-proof">Keep the proof.</div>
+        <div class="lpv4-06-underline"></div>
+      </div>
+    </div>
+    <div id="lpv4-06-clip-3" class="clip" data-start="0" data-duration="19.816042" data-track-index="2">
+      <div class="lpv4-06-pip"><svg style="width:100%;height:100%;display:block" class="pip-rig lpv4-06-actor" viewBox="0 0 480 480" aria-hidden="true"><defs><linearGradient id="lpv4-06-_R_0_-shell" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7095ff"></stop><stop offset=".45" stop-color="#3452ff"></stop><stop offset="1" stop-color="#1b2aac"></stop></linearGradient><linearGradient id="lpv4-06-_R_0_-edge" x1="0" x2="1"><stop stop-color="#7ac8ff"></stop><stop offset="1" stop-color="#385eea"></stop></linearGradient><linearGradient id="lpv4-06-_R_0_-visor" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#293057"></stop><stop offset="1" stop-color="#080c20"></stop></linearGradient><linearGradient id="lpv4-06-_R_0_-paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#bfcaff"></stop></linearGradient></defs><ellipse class="rig-shadow" cx="246" cy="421" rx="111" ry="15" fill="#020613" opacity=".22"></ellipse><g class="rig-all"><g class="rig-feet"><g class="rig-foot-left"><path d="M170 361 205 360 209 401Q206 419 164 417Q143 414 150 399Z" fill="url(#lpv4-06-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M155 406Q174 411 203 405" fill="none" stroke="#7d9dff" stroke-width="4"></path></g><g class="rig-foot-right"><path d="M273 360 309 357 331 399Q338 417 304 420Q277 422 273 403Z" fill="url(#lpv4-06-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M282 408Q303 414 324 406" fill="none" stroke="#7d9dff" stroke-width="4"></path></g></g><g class="rig-torso"><g class="rig-arm-left"><path d="M155 239Q122 229 102 204" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m113 211-62-48 20 71 42-8 13-20Z" fill="url(#lpv4-06-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m51 163 54 62-34 9" fill="#3452ff"></path><path d="m51 163 62 48-8 14Z" fill="#f3f5fa"></path></g><g class="rig-arm-right"><path d="M318 240Q351 253 367 279" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m355 267 73 51-59-2-23-35Z" fill="url(#lpv4-06-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m355 267 73 51-61-18Z" fill="#f3f5fa"></path><path d="m367 300 61 18-59-2Z" fill="#3452ff"></path></g><path d="M164 77 328 92Q349 95 346 121L323 346Q320 371 296 376L143 360Z" fill="#182bac" stroke="#1d2ea9" stroke-width="4"></path><path d="M159 77Q140 76 137 98L131 128Q153 137 145 157Q141 169 127 168L112 299Q131 311 124 330Q118 344 115 344L115 350Q114 366 135 369L289 389Q310 392 313 371L323 336Q301 326 308 306Q312 295 327 294L344 164Q324 153 331 134Q336 121 347 119L351 109Q354 91 333 88Z" fill="url(#lpv4-06-_R_0_-shell)" stroke="#8da8ff" stroke-width="3"></path><path d="m283 83 31 4-29 297-30-4Z" fill="url(#lpv4-06-_R_0_-edge)" opacity=".85"></path><path d="m299 110-21 244" fill="none" stroke="#c0e4ff" stroke-width="5" stroke-dasharray="11 15" stroke-linecap="round"></path><path d="m154 93 116 14" fill="none" stroke="#acbdff" stroke-width="4" stroke-linecap="round" opacity=".65"></path><path d="m142 330 92 11" fill="none" stroke="#0c268f" stroke-width="3" stroke-linecap="round" opacity=".3"></path><g class="rig-head"><path d="M166 150Q133 162 135 207Q137 246 179 255L250 264Q278 260 281 218Q287 171 251 160Z" fill="url(#lpv4-06-_R_0_-visor)" stroke="#172044" stroke-width="5"></path><path d="M150 181Q169 158 197 168" fill="none" stroke="#6b78ae" stroke-width="5" stroke-linecap="round" opacity=".6"></path><g class="rig-look"><g class="rig-eyes"><path d="M171 201Q177 176 187 185Q199 194 189 218Q183 211 174 219Q170 211 171 201Z" fill="#f8f36b"></path><path d="M224 209Q232 184 243 194Q253 204 243 226Q236 217 227 227Q222 219 224 209Z" fill="#f8f36b"></path></g><g class="rig-brows" fill="none" stroke="#f8f36b" stroke-width="4" stroke-linecap="round"><path d="m169 181 16-4"></path><path d="m229 186 15 7"></path></g><g class="rig-mouth"><ellipse cx="209" cy="240" rx="11" ry="8" fill="#f8f36b"></ellipse><ellipse cx="209" cy="236" rx="6" ry="2" fill="#ffffc6"></ellipse></g></g></g><path d="m149 280 74 9" stroke="#bdcdff" stroke-width="3" opacity=".45"></path><path d="m148 289 50 6" stroke="#bdcdff" stroke-width="2" opacity=".45"></path><rect x="244" y="296" width="19" height="30" rx="3" fill="#a9c7ff" opacity=".7" transform="rotate(7 244 296)"></rect><path d="m248 303 11 1m-12 5 11 1m-12 5 11 1" stroke="#2441bb" stroke-width="2"></path></g></g></svg></div>
+      <div class="lpv4-06-stamp-stage"><div class="lpv4-06-burst"></div><div class="lpv4-06-shadow"></div><div class="lpv4-06-stamp">PROOF</div></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines['lpv4-06'] = tl;
+      const PULSE = 0.4;
+      const BEATS = [PULSE, PULSE * 5, PULSE * 9];
+      tl.fromTo('.lpv4-06-pip', { y: 24, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: 'power3.out' }, 0);
+      tl.fromTo('#lpv4-06-count1', { scale: 1.45, filter: 'blur(10px)', opacity: 0 }, { scale: 1, filter: 'blur(0px)', opacity: 1, duration: 0.5, ease: 'power4.out' }, BEATS[0]);
+      tl.fromTo('#lpv4-06-count2', { x: -210, y: 210, opacity: 0 }, { x: 0, y: 210, opacity: 1, duration: 0.45, ease: 'expo.out' }, BEATS[1]);
+      tl.fromTo('#lpv4-06-count3', { y: 475, rotation: 6, opacity: 0 }, { y: 420, rotation: 0, opacity: 1, duration: 0.55, ease: 'circ.out' }, BEATS[2]);
+      tl.fromTo('.lpv4-06-marker', { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: 'power4.out' }, BEATS[0]);
+      tl.to('.lpv4-06-marker', { y: 210, duration: 0.25, ease: 'expo.out' }, BEATS[1]);
+      tl.to('.lpv4-06-marker', { y: 420, duration: 0.25, ease: 'circ.out' }, BEATS[2]);
+      // Same evidence compacts into a readable upper band at the source beat.
+      tl.to('.lpv4-06-counts', { y: -65, duration: 0.65, ease: 'power2.inOut' }, 5);
+      ['#lpv4-06-count1', '#lpv4-06-count2', '#lpv4-06-count3'].forEach(function (selector, i) {
+        tl.to(selector, { x: i * 580, y: 0, duration: 0.65, ease: 'power2.inOut' }, 5);
+      });
+      tl.to('.lpv4-06-number', { scale: 0.68, duration: 0.65, ease: 'power2.inOut' }, 5);
+      tl.to('.lpv4-06-label', { y: -31, scale: 1.08, transformOrigin: 'left top', duration: 0.65, ease: 'power2.inOut' }, 5);
+      tl.to('.lpv4-06-marker', { scaleX: 0, duration: 0.2, ease: 'power2.in' }, 5);
+      tl.fromTo('.lpv4-06-real', { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power4.out' }, 5.65);
+      tl.fromTo('.lpv4-06-invented', { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power4.out' }, 6.65);
+      tl.fromTo('.lpv4-06-boundary', { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: 'power3.out' }, 7.2);
+      tl.to('.lpv4-06-pip', { x: 5, y: -10, rotation: -7, duration: 0.7, ease: 'power2.inOut' }, 6.65);
+      tl.fromTo('.lpv4-06-scope', { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out' }, 8.1);
+      // Internal leftward cut: equal distance and mirrored easing across the seam.
+      tl.to(['.lpv4-06-source', '.lpv4-06-counts'], { x: -150, duration: 0.3, ease: 'power4.in' }, 10.7);
+      tl.to(['.lpv4-06-source', '.lpv4-06-counts'], { opacity: 0, duration: 0.28, ease: 'power1.in' }, 10.72);
+      tl.fromTo('.lpv4-06-ink', { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: 'power3.out' }, 11);
+      tl.fromTo('.lpv4-06-brand', { x: 150, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'power4.out' }, 11);
+      tl.to('.lpv4-06-pip', { x: 20, y: -150, rotation: 0, scale: 0.92, duration: 0.85, ease: 'power2.inOut' }, 11);
+      tl.fromTo('.lpv4-06-rule', { y: 55, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, 12.05);
+      tl.fromTo('.lpv4-06-proof', { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'expo.out' }, 13.1);
+      tl.fromTo('.lpv4-06-underline', { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: 'power3.out' }, 13.35);
+      tl.fromTo('.lpv4-06-stamp-stage', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: 'power3.out' }, 13.25);
+      const PRESS_START = 13.85, PRESS_DUR = 0.16, RELEASE_START = PRESS_START + PRESS_DUR;
+      tl.to('.lpv4-06-stamp', { scale: 0.92, duration: PRESS_DUR, ease: 'none' }, PRESS_START);
+      tl.to('.lpv4-06-shadow', { scale: 0.92, y: -6, duration: PRESS_DUR, ease: 'none' }, PRESS_START);
+      tl.to('.lpv4-06-stamp', { scale: 1, duration: 0.55, ease: 'back.out(2)' }, RELEASE_START);
+      tl.to('.lpv4-06-shadow', { scale: 1, y: 0, duration: 0.55, ease: 'back.out(2)' }, RELEASE_START);
+      tl.fromTo('.lpv4-06-burst', { scale: 0.9, opacity: 0 }, { scale: 1.5, opacity: 0.45, duration: 0.24, ease: 'power2.out' }, RELEASE_START);
+      tl.to('.lpv4-06-burst', { opacity: 0, duration: 0.35, ease: 'power2.in' }, RELEASE_START + 0.24);
+      // All movement finishes at 14.60; hold the complete closing state through 16.981.
+    
+      const retime = 0.957918674;
+      const authoredTweens = tl.getChildren(false,true,false);
+      authoredTweens.forEach(t => { const at=t.startTime()*retime; t.duration(t.duration()*retime); t.startTime(at); });
+      const actor = '.lpv4-06-actor';
+      const joint = part => actor+' .rig-'+part;
+      tl.set('.lpv4-06-actor .rig-mouth',{scaleY:.16,svgOrigin:'209 239'},0);
+      tl.set('.lpv4-06-actor .rig-eyes',{scaleY:1,svgOrigin:'209 206'},0);
+      tl.set('.lpv4-06-actor .rig-torso',{svgOrigin:'235 355'},0);
+      tl.set('.lpv4-06-actor .rig-arm-left',{svgOrigin:'155 239'},0);
+      tl.set('.lpv4-06-actor .rig-arm-right',{svgOrigin:'318 240'},0);
+      tl.set('.lpv4-06-actor .rig-foot-left',{svgOrigin:'185 382'},0);
+      tl.set('.lpv4-06-actor .rig-foot-right',{svgOrigin:'295 382'},0);
+      // Eyelids and gaze change independently; the viewer can see Pip thinking.
+      for(let t=2;t<16.266417-.4;t+=3.2){
+        tl.to('.lpv4-06-actor .rig-eyes',{scaleY:.08,duration:.09,ease:'power2.in'},t);
+        tl.to('.lpv4-06-actor .rig-eyes',{scaleY:1,duration:.13,ease:'power2.out'},t+.09);
+      }
+      for(let t=.4;t<16.266417-1.1;t+=2.7){
+        tl.to('.lpv4-06-actor .rig-torso',{rotation:1.8,y:-3,duration:.55,ease:'sine.inOut'},t);
+        tl.to('.lpv4-06-actor .rig-torso',{rotation:-1,y:0,duration:.65,ease:'sine.inOut'},t+.55);
+      }
+      // A greeting, a point toward the evidence, then an open-handed explanation.
+      tl.to('.lpv4-06-actor .rig-look',{x:-5,y:0,duration:.35}, 4.391933);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:-18,duration:.4}, 4.717261);
+      tl.to('.lpv4-06-actor .rig-arm-right',{rotation:-42,duration:.4,ease:'power3.out'}, 7.482552);
+      tl.to('.lpv4-06-actor .rig-look',{x:4,y:0,duration:.3}, 7.482552);
+      tl.to('.lpv4-06-actor .rig-arm-right',{rotation:-8,duration:.5}, 10.573171);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:18,duration:.4}, 10.898499);
+      tl.to('.lpv4-06-actor .rig-look',{x:0,y:-2,duration:.3}, 12.362477);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:0,duration:.28}, 13.663790);
+      tl.to('.lpv4-06-actor .rig-arm-right',{rotation:-27,duration:.3}, 13.989119);
+      tl.to('.lpv4-06-actor .rig-arm-right',{rotation:0,duration:.35}, 14.802439);
+      // Footfalls during the existing travel into each proof position.
+      for(let k=0;k<4;k++){const t=5.693246+k*.24;
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:-8,rotation:k%2?8:-8,duration:.11},t);
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:0,rotation:0,duration:.13},t+.11);
+      }
+
+      tl.set('.lpv4-06-actor .rig-head',{svgOrigin:'209 207'},0);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:30,duration:.29}, 13.966417);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:5,duration:.29}, 14.266417);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:30,duration:.29}, 14.566417);
+      tl.to('.lpv4-06-actor .rig-arm-left',{rotation:5,duration:.29}, 14.866417);
+      tl.to('.lpv4-06-actor .rig-eyes > path:first-child',{scaleY:.1,svgOrigin:'181 204',duration:.12}, 15.616417);
+      tl.to('.lpv4-06-actor .rig-eyes > path:first-child',{scaleY:1,duration:.15}, 15.816417);
+
+      const finalRetime=1.218218001;
+      tl.getChildren(false,true,false).forEach(t=>{const at=t.startTime()*finalRetime;t.duration(t.duration()*finalRetime);t.startTime(at);});
+
+      const v4Mouth = [1.074,0.827,1.232,1.25,1.25,0.194,0.56,0.221,1.25,1.25,0.915,0.949,1.25,1.25,1.25,0.769,0.681,1.216,1.25,1.25,0.753,0.263,0.923,1.25,1.25,0.801,0.789,1.035,0.392,0.537,1.158,1.135,0.58,0.777,1.087,1.082,0.638,0.515,0.207,0.166,0.237,1.25,1.25,0.871,1.054,1.158,0.332,1.25,1.25,1.25,1.191,0.663,1.25,1.166,0.926,0.971,1.25,1.106,0.505,0.734,0.299,0.57,1.116,1.25,0.601,0.561,0.482,0.637,0.81,1.175,0.64,0.303,1.25,1.25,1.25,1.25,1.25,1.25,1.25,0.896,1.25,1.25,0.888,1.077,0.895,0.764,0.831,1.122,1.25,1.25,1.25,1.25,1.242,0.976,0.812,0.658,0.598,0.462,0.162,0.164,0.162,0.161,0.161,0.16,0.16,0.16,0.16,1.083,1.163,1.25,1.25,0.43,0.805,1.25,1.25,0.826,1.039,1.25,0.798,1.25,1.25,1.25,1.25,0.998,0.443,0.168,0.574,1.25,1.25,1.047,0.395,0.775,1.25,1.25,0.634,1.25,1.25,1.142,1.116,1.25,1.25,1.25,1.25,1.011,1.25,0.895,0.231,0.212,0.17,0.16,0.16,0.16,0.16,0.16,0.16,1.017,1.25,0.626,1.25,1.25,1.166,1.021,1.25,0.257,0.307,0.783,0.292,1.191,1.25,0.713,1.25,0.966,0.949,0.468,0.829,1.25,1.089,1.068,1.25,0.975,0.937,0.875,0.634,0.68,0.2,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.246,1.25,1.035,1.25,1.25,1.25,0.909,0.984,1.25,1.25,1.25,1.25,1.25,1.25,1.226,1.172,1.075,0.454,1.25,1.25,1.235,0.637,1.002,1.057,1.15,1.25,1.25,1.148,1.085,0.462,1.25,1.214,1.248,1.025,0.938,0.827,0.47,0.162,0.162,0.161,0.161,0.16,0.16,0.161,0.698,1.25,1.25,1.25,0.32,0.498,0.449,1.25,1.02,0.563,1.25,0.603,0.783,1.037,0.79,1.25,1.25,1.25,1.25,1.151,0.997,1.25,1.026,0.829,0.853,1.25,1.25,1.25,0.596,0.601,0.629,0.265,0.16,0.16,0.16,0.16,0.16,0.241,0.586,1.25,0.496,1.25,1.25,1.25,1.25,1.25,1.25,1.22,1.222,1.068,0.812,1.25,1.185,0.318,0.162,1.004,0.806,1.189,0.936,0.527,0.209,0.16];
+      v4Mouth.forEach((v,i)=>tl.to('.lpv4-06-actor .rig-mouth',{scaleY:v,duration:1/15,ease:'none'},i/15));
+      tl.to('.lpv4-06-actor .rig-mouth',{scaleY:.16,duration:.12}, 19.676042);
+})();
+  </script>
+</template>

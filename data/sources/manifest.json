@@ -1,0 +1,86 @@
+[
+  {
+    "id": "icici-wealth",
+    "url": "https://www.icici.bank.in/personal-banking/cards/debit-card/wealth-management-debit-card",
+    "file": "data/sources/icici-wealth.html",
+    "sha256": "2bc0680109428e58dd8cfb8bfab4fdaf9e00ea4f50ca030f03e1f04e8bed9538",
+    "retrievedAt": "2026-10-03T13:47:27.688373+00:00",
+    "bytes": 427921
+  },
+  {
+    "id": "icici-lounges",
+    "url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/debit-card-lounge-list.pdf",
+    "finalUrl": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/debit-card-lounge-list.pdf",
+    "file": "data/sources/icici-lounges.pdf",
+    "sha256": "0386788b0ac35913a37e261ed85682aa9dc63b7972e1bbc9a84c1bdb71569078",
+    "retrievedAt": "2026-10-03T13:45:05.088760+00:00",
+    "bytes": 6055130,
+    "pages": 85
+  },
+  {
+    "id": "icici-terms",
+    "url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/pdf/debit-card-approved-t-and-c.pdf",
+    "finalUrl": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/pdf/debit-card-approved-t-and-c.pdf",
+    "file": "data/sources/icici-terms.pdf",
+    "sha256": "6de5e03bf1361632540c30e6b40a2c9667a6b98e0fa792034305874d134d89ea",
+    "retrievedAt": "2026-10-03T13:45:04.605907+00:00",
+    "bytes": 321642,
+    "pages": 24
+  },
+  {
+    "id": "hdfc-regalia-gold-2026",
+    "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/pdfs/lounge-t-and-cs-and-list-Regalia-Gold.pdf",
+    "finalUrl": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/pdfs/lounge-t-and-cs-and-list-Regalia-Gold.pdf",
+    "file": "data/sources/hdfc-regalia-gold-2026.pdf",
+    "sha256": "39d3bf8aee91f086f2559c272286c60a3136f3d5ef3ab7de890d4b2b312647e9",
+    "retrievedAt": "2026-10-03T13:45:04.238251+00:00",
+    "bytes": 320704,
+    "pages": 1
+  },
+  {
+    "id": "hdfc-check-spend",
+    "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/rg-domestic-lounge-netbanking-process.pdf",
+    "finalUrl": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/rg-domestic-lounge-netbanking-process.pdf",
+    "file": "data/sources/hdfc-check-spend.pdf",
+    "sha256": "ac4a53764287b4fb17c18c68dd469bb2076488bd41a8b23a6b59413877261faf",
+    "retrievedAt": "2026-10-03T13:45:04.801028+00:00",
+    "bytes": 153817,
+    "pages": 1
+  },
+  {
+    "id": "hdfc-legacy",
+    "url": "https://www.hdfcbank.com/personal/resources/learning-centre/pay/why-is-regalia-gold-credit-card-the-best-travel-credit-card",
+    "file": "data/sources/hdfc-legacy.html",
+    "sha256": "ecc895cdd6ac5f2415e5a823a932101ef5b05573d2db7d9cde6dd621d38971a7",
+    "retrievedAt": "2026-10-03T13:47:27.695271+00:00",
+    "bytes": 1355718
+  },
+  {
+    "id": "axis-priority-2026",
+    "url": "https://www.axis.bank.in/docs/default-source/default-document-library/terms-and-conditions-for-nr-priority-debit-card.pdf?sfvrsn=5da9ec52_2",
+    "finalUrl": "https://www.axis.bank.in/docs/default-source/default-document-library/terms-and-conditions-for-nr-priority-debit-card.pdf?sfvrsn=5da9ec52_2",
+    "file": "data/sources/axis-priority-2026.pdf",
+    "sha256": "b622081df5cae473d92256083f5a982f0bea1aa1269ef8708d566ff08b13b4a9",
+    "retrievedAt": "2026-10-03T13:45:05.614597+00:00",
+    "bytes": 482360,
+    "pages": 2
+  },
+  {
+    "id": "axis-lounges",
+    "url": "https://www.axis.bank.in/docs/default-source/default-document-library/debit-card-lounge-list.pdf?sfvrsn=f43ad662_9",
+    "finalUrl": "https://www.axis.bank.in/docs/default-source/default-document-library/debit-card-lounge-list.pdf?sfvrsn=f43ad662_9",
+    "file": "data/sources/axis-lounges.pdf",
+    "sha256": "884650461351eec08c3822c848beeb6757ff8cff4179e9319904ad8f99ff6a9f",
+    "retrievedAt": "2026-10-03T13:45:05.604332+00:00",
+    "bytes": 561826,
+    "pages": 9
+  },
+  {
+    "id": "axis-product",
+    "url": "https://www.axis.bank.in/cards/debit-card/priority-debit-card",
+    "file": "data/sources/axis-product.html",
+    "sha256": "ac27f090614a0bbb88b35819ee1c472ea2a02ed27141aecee407dc6a455befbc",
+    "retrievedAt": "2026-10-03T13:51:00.129746+00:00",
+    "bytes": 803840
+  }
+]

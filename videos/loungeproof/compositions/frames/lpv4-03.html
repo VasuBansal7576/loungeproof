@@ -1,0 +1,166 @@
+<template>
+  <style>
+    @font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+    #root{position:relative;width:100%;height:100%;overflow:hidden;font-family:'DM Sans';color:#f3f5fa}
+    .lpv4-03-ground{position:absolute;inset:0;background:#3452ff}
+    .lpv4-03-stage{position:absolute;inset:0}
+    .lpv4-03-title{position:absolute;left:76px;top:64px;margin:0;font-size:80px;line-height:1.06;font-weight:850;letter-spacing:-3px}
+    .lpv4-03-kicker{position:absolute;left:80px;top:170px;font-size:24px;letter-spacing:3px;font-weight:650}
+    .lpv4-03-comparison{position:absolute;inset:0}
+    .lpv4-03-burst-wrap{position:absolute;left:0;top:260px;width:1440px;height:480px}
+    .lpv4-03-paper{position:absolute;left:50%;top:50%;width:580px;box-sizing:border-box;background:#f3f5fa;color:#0d1019;padding:36px 40px;box-shadow:0 18px 0 #0d1019;border-radius:4px;transform-origin:center}
+    .lpv4-03-old{height:280px}
+    .lpv4-03-current{height:490px}
+    .lpv4-03-date{font-size:32px;font-weight:850;letter-spacing:1px;border-bottom:3px solid #aab3c8;padding-bottom:22px}
+    .lpv4-03-visits{font-size:62px;line-height:1.05;letter-spacing:-2px;font-weight:800;margin-top:25px;white-space:nowrap}
+    .lpv4-03-small{font-size:32px;font-weight:550;letter-spacing:0}
+    .lpv4-03-historical{font-size:28px;letter-spacing:2px;font-weight:850;margin-top:28px}
+    .lpv4-03-amount{margin-top:26px;font-size:112px;font-weight:850;letter-spacing:-5px;line-height:1.05}
+    .lpv4-03-quarter{font-size:28px;letter-spacing:1px;font-weight:800;margin-top:12px}
+    .lpv4-03-eligible{font-size:24px;color:#3452ff;margin-top:8px;font-weight:650}
+    .lpv4-03-pip{position:absolute;left:1360px;top:258px;width:490px;height:490px;object-fit:contain;z-index:4}
+    .lpv4-03-stamp-stage{position:absolute;left:100px;top:716px;width:610px;height:116px}
+    .lpv4-03-stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f8f36b;color:#0d1019;font-size:41px;font-weight:900;letter-spacing:1px;border:5px solid #0d1019;box-shadow:0 12px 0 #0d1019;transform-origin:50% 50%;z-index:2}
+    .lpv4-03-stamp-ring{position:absolute;inset:12px;border:5px solid #f8f36b;border-radius:8px;z-index:1}
+    .lpv4-03-evidence{position:absolute;inset:0}
+    .lpv4-03-summary{position:absolute;left:80px;top:275px;width:565px}
+    .lpv4-03-summary-date{font-size:32px;font-weight:800;letter-spacing:1px}
+    .lpv4-03-summary-money{font-size:112px;font-weight:850;letter-spacing:-5px;line-height:1.1;margin-top:18px}
+    .lpv4-03-summary-label{font-size:28px;font-weight:750;letter-spacing:1px;margin-top:8px}
+    .lpv4-03-summary-visits{font-size:60px;font-weight:800;letter-spacing:-2px;margin-top:26px}
+    .lpv4-03-tag{margin-top:38px;background:#f8f36b;color:#0d1019;padding:22px 24px;font-size:31px;font-weight:800;line-height:1.2;border-radius:4px;width:330px}
+    .lpv4-03-viewport{position:absolute;left:710px;top:260px;width:1118.75px;height:550px;overflow:hidden;border-radius:8px;background:#f3f5fa;box-shadow:0 16px 0 #0d1019}
+    .lpv4-03-capture{position:absolute;left:0;top:-475px;width:1118.75px;height:1025px;max-width:none}
+    .lpv4-03-source-notes{position:absolute;left:712px;top:836px;width:1120px;font-size:22px;font-weight:550;line-height:1.3}
+  </style>
+  <div id="root" data-composition-id="lpv4-03" data-width="1920" data-height="1080" data-duration="20.992917">
+    <div id="lpv4-03-clip-1" class="clip lpv4-03-ground" data-start="0" data-duration="20.992917" data-track-index="0"></div>
+    <div id="lpv4-03-clip-2" class="clip lpv4-03-stage" data-start="0" data-duration="20.992917" data-track-index="1">
+      <h1 class="lpv4-03-title">HDFC REGALIA GOLD</h1>
+      <div class="lpv4-03-kicker">DATES SETTLE IT · RULE COMPARISON</div>
+      <div class="lpv4-03-comparison">
+        <div class="lpv4-03-burst-wrap">
+          <div class="lpv4-03-paper lpv4-03-old" data-target-x="-335" data-target-y="-35">
+            <div class="lpv4-03-date">2024 ARTICLE</div>
+            <div class="lpv4-03-visits">12 <span class="lpv4-03-small">annual visits</span></div>
+            <div class="lpv4-03-historical">HISTORICAL</div>
+          </div>
+          <div class="lpv4-03-paper lpv4-03-current" data-target-x="325" data-target-y="0">
+            <div class="lpv4-03-date">JUL 2026 TERMS</div>
+            <div class="lpv4-03-visits lpv4-03-current-visits">3 <span class="lpv4-03-small">/ quarter</span></div>
+            <div class="lpv4-03-spend">
+              <div class="lpv4-03-amount">₹60,000</div>
+              <div class="lpv4-03-quarter">PREVIOUS QUARTER</div>
+              <div class="lpv4-03-eligible">Eligible spending</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lpv4-03-stamp-stage">
+          <div class="lpv4-03-stamp-ring"></div>
+          <div class="lpv4-03-stamp">DATED RULE WINS</div>
+        </div>
+      </div>
+        <div class="lpv4-03-pip"><svg style="width:100%;height:100%;display:block" class="pip-rig lpv4-03-actor" viewBox="0 0 480 480" aria-hidden="true"><defs><linearGradient id="lpv4-03-_R_0_-shell" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7095ff"></stop><stop offset=".45" stop-color="#3452ff"></stop><stop offset="1" stop-color="#1b2aac"></stop></linearGradient><linearGradient id="lpv4-03-_R_0_-edge" x1="0" x2="1"><stop stop-color="#7ac8ff"></stop><stop offset="1" stop-color="#385eea"></stop></linearGradient><linearGradient id="lpv4-03-_R_0_-visor" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#293057"></stop><stop offset="1" stop-color="#080c20"></stop></linearGradient><linearGradient id="lpv4-03-_R_0_-paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#bfcaff"></stop></linearGradient></defs><ellipse class="rig-shadow" cx="246" cy="421" rx="111" ry="15" fill="#020613" opacity=".22"></ellipse><g class="rig-all"><g class="rig-feet"><g class="rig-foot-left"><path d="M170 361 205 360 209 401Q206 419 164 417Q143 414 150 399Z" fill="url(#lpv4-03-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M155 406Q174 411 203 405" fill="none" stroke="#7d9dff" stroke-width="4"></path></g><g class="rig-foot-right"><path d="M273 360 309 357 331 399Q338 417 304 420Q277 422 273 403Z" fill="url(#lpv4-03-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M282 408Q303 414 324 406" fill="none" stroke="#7d9dff" stroke-width="4"></path></g></g><g class="rig-torso"><g class="rig-arm-left"><path d="M155 239Q122 229 102 204" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m113 211-62-48 20 71 42-8 13-20Z" fill="url(#lpv4-03-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m51 163 54 62-34 9" fill="#3452ff"></path><path d="m51 163 62 48-8 14Z" fill="#f3f5fa"></path></g><g class="rig-arm-right"><path d="M318 240Q351 253 367 279" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m355 267 73 51-59-2-23-35Z" fill="url(#lpv4-03-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m355 267 73 51-61-18Z" fill="#f3f5fa"></path><path d="m367 300 61 18-59-2Z" fill="#3452ff"></path></g><path d="M164 77 328 92Q349 95 346 121L323 346Q320 371 296 376L143 360Z" fill="#182bac" stroke="#1d2ea9" stroke-width="4"></path><path d="M159 77Q140 76 137 98L131 128Q153 137 145 157Q141 169 127 168L112 299Q131 311 124 330Q118 344 115 344L115 350Q114 366 135 369L289 389Q310 392 313 371L323 336Q301 326 308 306Q312 295 327 294L344 164Q324 153 331 134Q336 121 347 119L351 109Q354 91 333 88Z" fill="url(#lpv4-03-_R_0_-shell)" stroke="#8da8ff" stroke-width="3"></path><path d="m283 83 31 4-29 297-30-4Z" fill="url(#lpv4-03-_R_0_-edge)" opacity=".85"></path><path d="m299 110-21 244" fill="none" stroke="#c0e4ff" stroke-width="5" stroke-dasharray="11 15" stroke-linecap="round"></path><path d="m154 93 116 14" fill="none" stroke="#acbdff" stroke-width="4" stroke-linecap="round" opacity=".65"></path><path d="m142 330 92 11" fill="none" stroke="#0c268f" stroke-width="3" stroke-linecap="round" opacity=".3"></path><g class="rig-head"><path d="M166 150Q133 162 135 207Q137 246 179 255L250 264Q278 260 281 218Q287 171 251 160Z" fill="url(#lpv4-03-_R_0_-visor)" stroke="#172044" stroke-width="5"></path><path d="M150 181Q169 158 197 168" fill="none" stroke="#6b78ae" stroke-width="5" stroke-linecap="round" opacity=".6"></path><g class="rig-look"><g class="rig-eyes"><path d="M171 201Q177 176 187 185Q199 194 189 218Q183 211 174 219Q170 211 171 201Z" fill="#f8f36b"></path><path d="M224 209Q232 184 243 194Q253 204 243 226Q236 217 227 227Q222 219 224 209Z" fill="#f8f36b"></path></g><g class="rig-brows" fill="none" stroke="#f8f36b" stroke-width="4" stroke-linecap="round"><path d="m169 181 16-4"></path><path d="m229 186 15 7"></path></g><g class="rig-mouth"><ellipse cx="209" cy="240" rx="11" ry="8" fill="#f8f36b"></ellipse><ellipse cx="209" cy="236" rx="6" ry="2" fill="#ffffc6"></ellipse></g></g></g><path d="m149 280 74 9" stroke="#bdcdff" stroke-width="3" opacity=".45"></path><path d="m148 289 50 6" stroke="#bdcdff" stroke-width="2" opacity=".45"></path><rect x="244" y="296" width="19" height="30" rx="3" fill="#a9c7ff" opacity=".7" transform="rotate(7 244 296)"></rect><path d="m248 303 11 1m-12 5 11 1m-12 5 11 1" stroke="#2441bb" stroke-width="2"></path></g></g></svg></div>
+      <div class="lpv4-03-evidence">
+        <div class="lpv4-03-summary">
+          <div class="lpv4-03-summary-date">JUL 2026 · CURRENT</div>
+          <div class="lpv4-03-summary-money">₹60,000</div>
+          <div class="lpv4-03-summary-label">PREVIOUS QUARTER</div>
+          <div class="lpv4-03-summary-visits">3 / quarter</div>
+          <div class="lpv4-03-tag">New-card exception?<br>Confirm.</div>
+        </div>
+        <div class="lpv4-03-viewport"><img class="lpv4-03-capture" src="assets/v3/hdfc-evidence.png" alt="Actual bank-evidence view: NetBanking eligibility guide, April 2024 historical article, July 2026 lounge terms, and review-decision heading"></div>
+        <div class="lpv4-03-source-notes">Sources: Regalia Gold NetBanking eligibility guide · April 2024 travel article<br>Regalia Gold lounge terms · effective 01 Jul 2026</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+  <script>
+    (function(){
+      const tl=gsap.timeline({paused:true});
+      window.__timelines=window.__timelines||{};
+      window.__timelines['lpv4-03']=tl;
+      const q=(name)=>'.lpv4-03-'+name;
+      tl.fromTo(q('title'),{y:24,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},0);
+      tl.fromTo(q('kicker'),{y:12,opacity:0},{y:0,opacity:1,duration:.5,ease:'power3.out'},.15);
+      tl.fromTo(q('pip'),{x:45,rotation:5,opacity:0},{x:0,rotation:0,opacity:1,duration:.7,ease:'power3.out'},.1);
+      document.querySelectorAll(q('paper')).forEach((el,i)=>{
+        tl.fromTo(el,{xPercent:-50,yPercent:-50,x:0,y:0,scale:.6,opacity:0},{x:Number(el.dataset.targetX),y:Number(el.dataset.targetY),scale:1,opacity:1,duration:1.4,ease:'power3.out'},.3+i*.06);
+      });
+      tl.fromTo(q('old')+' '+q('visits'),{y:18,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},2.2);
+      tl.fromTo(q('current-visits'),{y:18,opacity:0},{y:0,opacity:1,duration:.65,ease:'power3.out'},4.1);
+      tl.to(q('pip'),{x:-40,rotation:-7,duration:.8,ease:'power2.inOut'},4.2);
+      tl.to(q('old'),{scale:.82,rotation:-6,opacity:.58,duration:.8,ease:'power2.inOut'},5);
+      tl.fromTo(q('historical'),{y:10,opacity:0},{y:0,opacity:1,duration:.5,ease:'power3.out'},5.1);
+      tl.to(q('current'),{x:260,y:-5,scale:1.06,duration:.9,ease:'power2.inOut'},5);
+      tl.fromTo(q('spend'),{y:30,opacity:0},{y:0,opacity:1,duration:.8,ease:'power3.out'},6.05);
+      tl.fromTo(q('stamp-stage'),{y:28,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},9.25);
+      // A resting stamp compresses, then releases at the adjacent timeline position.
+      tl.to(q('stamp'),{scale:.9,duration:.16,ease:'none'},9.85);
+      tl.to(q('stamp'),{scale:1,duration:.65,ease:'back.out(2)'},10.01);
+      tl.fromTo(q('stamp-ring'),{scale:1,opacity:0},{scale:1.16,opacity:.7,duration:.25,ease:'power2.out'},10.01);
+      tl.to(q('stamp-ring'),{scale:1.26,opacity:0,duration:.38,ease:'power2.out'},10.26);
+      tl.to(q('pip'),{x:-70,rotation:-11,duration:.6,ease:'power2.inOut'},9.6);
+      // Internal cut-the-curve: both phases travel left through the evidence handoff.
+      tl.to(q('comparison'),{x:-150,duration:.3,ease:'power4.in'},10.8);
+      tl.to(q('comparison'),{opacity:0,duration:.22,ease:'none'},10.88);
+      tl.fromTo(q('evidence'),{x:150,opacity:0},{x:0,opacity:1,duration:.3,ease:'power4.out'},11.1);
+      tl.fromTo(q('source-notes'),{y:12,opacity:0},{y:0,opacity:1,duration:.55,ease:'power3.out'},12.35);
+      tl.fromTo(q('tag'),{y:20,scale:.96,opacity:0},{y:0,scale:1,opacity:1,duration:.65,ease:'power3.out'},14.05);
+      // Last two seconds retain a stable, readable source view; root owns the frame exit.
+    
+      const retime = 1.022253723;
+      const authoredTweens = tl.getChildren(false,true,false);
+      authoredTweens.forEach(t => { const at=t.startTime()*retime; t.duration(t.duration()*retime); t.startTime(at); });
+      const actor = '.lpv4-03-actor';
+      const joint = part => actor+' .rig-'+part;
+      tl.set('.lpv4-03-actor .rig-mouth',{scaleY:.16,svgOrigin:'209 239'},0);
+      tl.set('.lpv4-03-actor .rig-eyes',{scaleY:1,svgOrigin:'209 206'},0);
+      tl.set('.lpv4-03-actor .rig-torso',{svgOrigin:'235 355'},0);
+      tl.set('.lpv4-03-actor .rig-arm-left',{svgOrigin:'155 239'},0);
+      tl.set('.lpv4-03-actor .rig-arm-right',{svgOrigin:'318 240'},0);
+      tl.set('.lpv4-03-actor .rig-foot-left',{svgOrigin:'185 382'},0);
+      tl.set('.lpv4-03-actor .rig-foot-right',{svgOrigin:'295 382'},0);
+      // Eyelids and gaze change independently; the viewer can see Pip thinking.
+      for(let t=2;t<17.228042-.4;t+=3.2){
+        tl.to('.lpv4-03-actor .rig-eyes',{scaleY:.08,duration:.09,ease:'power2.in'},t);
+        tl.to('.lpv4-03-actor .rig-eyes',{scaleY:1,duration:.13,ease:'power2.out'},t+.09);
+      }
+      for(let t=.4;t<17.228042-1.1;t+=2.7){
+        tl.to('.lpv4-03-actor .rig-torso',{rotation:1.8,y:-3,duration:.55,ease:'sine.inOut'},t);
+        tl.to('.lpv4-03-actor .rig-torso',{rotation:-1,y:0,duration:.65,ease:'sine.inOut'},t+.55);
+      }
+      // A greeting, a point toward the evidence, then an open-handed explanation.
+      tl.to('.lpv4-03-actor .rig-look',{x:-5,y:0,duration:.35}, 4.651571);
+      tl.to('.lpv4-03-actor .rig-arm-left',{rotation:-18,duration:.4}, 4.996132);
+      tl.to('.lpv4-03-actor .rig-arm-right',{rotation:-42,duration:.4,ease:'power3.out'}, 7.924899);
+      tl.to('.lpv4-03-actor .rig-look',{x:4,y:0,duration:.3}, 7.924899);
+      tl.to('.lpv4-03-actor .rig-arm-right',{rotation:-8,duration:.5}, 11.198227);
+      tl.to('.lpv4-03-actor .rig-arm-left',{rotation:18,duration:.4}, 11.542788);
+      tl.to('.lpv4-03-actor .rig-look',{x:0,y:-2,duration:.3}, 13.093312);
+      tl.to('.lpv4-03-actor .rig-arm-left',{rotation:0,duration:.4}, 14.471555);
+      tl.to('.lpv4-03-actor .rig-arm-right',{rotation:-27,duration:.3}, 14.816116);
+      tl.to('.lpv4-03-actor .rig-arm-right',{rotation:0,duration:.35}, 15.677518);
+      // Footfalls during the existing travel into each proof position.
+      for(let k=0;k<4;k++){const t=6.029815+k*.24;
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:-8,rotation:k%2?8:-8,duration:.11},t);
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:0,rotation:0,duration:.13},t+.11);
+      }
+
+      tl.set('.lpv4-03-actor .rig-head',{svgOrigin:'209 207'},0);
+      tl.to('.lpv4-03-actor .rig-head',{rotation:-7,duration:.45},1.2);
+      tl.to('.lpv4-03-actor .rig-brows',{y:-5,duration:.3},1.2);
+      tl.to('.lpv4-03-actor .rig-head',{rotation:0,duration:.4},4);
+      tl.to('.lpv4-03-actor .rig-brows',{y:0,duration:.3},4);
+      tl.to('.lpv4-03-pip',{x:-1030,y:310,scale:.6,rotation:0,duration:.7,ease:'power2.inOut'},11.35);
+
+      const finalRetime=1.218531798;
+      tl.getChildren(false,true,false).forEach(t=>{const at=t.startTime()*finalRetime;t.duration(t.duration()*finalRetime);t.startTime(at);});
+
+      const v4Mouth = [0.527,1.25,1.25,1.25,1.25,1.25,1.25,0.953,0.281,0.578,1.045,1.25,1.25,1.135,0.392,1.25,1.106,1.2,0.526,0.785,1.149,0.91,1.25,1.25,1.25,1.25,1.095,0.667,1.25,1.062,0.311,0.438,1.25,1.25,0.831,0.308,0.9,1.25,0.969,0.722,0.791,1.18,0.472,0.165,0.165,0.164,0.162,0.161,0.161,0.16,0.238,1.25,1.25,1.0,1.25,1.25,0.626,0.909,0.902,0.604,1.25,1.25,1.125,1.017,0.8,0.448,0.686,0.764,1.178,0.983,0.338,1.046,1.25,1.044,0.915,1.169,0.983,0.59,0.972,1.024,0.207,1.151,0.869,0.318,1.122,0.635,0.866,1.25,1.169,0.682,0.168,0.487,0.581,0.198,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.24,1.25,1.166,1.25,1.25,1.25,1.25,1.25,1.063,0.776,1.241,1.25,1.247,0.799,0.711,0.478,1.25,1.25,0.632,0.862,0.899,1.208,0.86,0.373,0.63,0.722,0.979,1.25,1.25,1.174,0.886,0.986,0.623,0.568,1.25,1.25,1.25,0.874,0.929,1.223,0.863,0.533,0.435,0.898,0.933,0.682,1.25,1.25,1.25,0.705,1.245,1.23,1.178,1.25,0.773,0.349,1.012,0.991,0.891,0.78,1.25,1.162,1.062,1.25,1.25,1.25,0.972,0.973,0.388,1.25,1.117,0.691,0.578,1.25,1.25,1.25,1.25,1.069,1.059,0.764,0.536,0.166,0.161,0.16,0.39,1.25,0.694,0.207,0.395,1.063,1.25,1.25,0.645,1.25,0.936,1.25,0.676,0.632,0.377,0.425,1.017,0.434,0.296,1.244,1.25,0.8,0.862,0.978,1.003,0.357,0.161,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.229,1.25,1.25,1.25,1.25,1.25,1.25,1.25,0.934,0.856,1.25,1.161,1.007,1.25,1.25,1.25,1.25,1.032,1.25,1.25,0.997,1.185,0.611,0.946,1.25,0.549,0.662,1.25,0.814,1.095,0.841,0.37,0.819,1.243,0.573,0.179,0.175,0.16,0.16,0.16,0.16,0.16,0.16,0.701,0.937,0.311,1.25,1.25,0.933,1.06,0.783,1.25,1.25,1.25,1.25,1.25,0.516,0.797,1.25,1.25,1.25,1.25,0.462,0.737,1.098,1.25,0.21,0.915,0.915,1.042,1.05,0.8,0.993,0.624,1.25,1.25,1.25,1.25,1.25,1.145,0.733,0.295,0.712,1.205,0.791,0.32,0.894,1.25,1.201,0.845,1.25,0.761,0.747,0.527,0.193];
+      v4Mouth.forEach((v,i)=>tl.to('.lpv4-03-actor .rig-mouth',{scaleY:v,duration:1/15,ease:'none'},i/15));
+      tl.to('.lpv4-03-actor .rig-mouth',{scaleY:.16,duration:.12}, 20.852917);
+})();
+  </script>
+</template>

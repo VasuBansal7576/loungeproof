@@ -1,0 +1,113 @@
+{
+  "tts_provider": "kokoro",
+  "voice_id": "bf_emma",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "v3-01",
+      "path": "assets/voice/v3-01.wav",
+      "duration_s": 9.899,
+      "words": []
+    },
+    {
+      "id": "v3-02",
+      "path": "assets/voice/v3-02.wav",
+      "duration_s": 15.659,
+      "words": []
+    },
+    {
+      "id": "v3-03",
+      "path": "assets/voice/v3-03.wav",
+      "duration_s": 17.237,
+      "words": []
+    },
+    {
+      "id": "v3-04",
+      "path": "assets/voice/v3-04.wav",
+      "duration_s": 16.427,
+      "words": []
+    },
+    {
+      "id": "v3-05",
+      "path": "assets/voice/v3-05.wav",
+      "duration_s": 14.528,
+      "words": []
+    },
+    {
+      "id": "v3-06",
+      "path": "assets/voice/v3-06.wav",
+      "duration_s": 16.277,
+      "words": []
+    },
+    {
+      "id": "pip-welcome",
+      "path": "assets/voice/pip-welcome.wav",
+      "duration_s": 6.123,
+      "words": []
+    },
+    {
+      "id": "pip-card",
+      "path": "assets/voice/pip-card.wav",
+      "duration_s": 9.515,
+      "words": []
+    },
+    {
+      "id": "pip-dates",
+      "path": "assets/voice/pip-dates.wav",
+      "duration_s": 8.235,
+      "words": []
+    },
+    {
+      "id": "pip-spend",
+      "path": "assets/voice/pip-spend.wav",
+      "duration_s": 10.56,
+      "words": []
+    },
+    {
+      "id": "pip-proof",
+      "path": "assets/voice/pip-proof.wav",
+      "duration_s": 9.301,
+      "words": []
+    },
+    {
+      "id": "pip-qualified",
+      "path": "assets/voice/pip-qualified.wav",
+      "duration_s": 8.832,
+      "words": []
+    },
+    {
+      "id": "pip-not-qualified",
+      "path": "assets/voice/pip-not-qualified.wav",
+      "duration_s": 8.789,
+      "words": []
+    },
+    {
+      "id": "pip-unknown",
+      "path": "assets/voice/pip-unknown.wav",
+      "duration_s": 7.723,
+      "words": []
+    },
+    {
+      "id": "pip-balance",
+      "path": "assets/voice/pip-balance.wav",
+      "duration_s": 9.344,
+      "words": []
+    },
+    {
+      "id": "pip-exact",
+      "path": "assets/voice/pip-exact.wav",
+      "duration_s": 8.917,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 177.366
+}

@@ -1,0 +1,411 @@
+{
+  "sources": [
+    {
+      "id": "icici-wealth",
+      "title": "ICICI Wealth Management World debit FAQ",
+      "url": "https://www.icici.bank.in/personal-banking/cards/debit-card/wealth-management-debit-card",
+      "publisher": "ICICI Bank",
+      "locator": "Lounge FAQ: account scope, alternatives, salary and family banking",
+      "retrievedAt": "2026-10-03T13:47:27.688373+00:00",
+      "sha256": "2bc0680109428e58dd8cfb8bfab4fdaf9e00ea4f50ca030f03e1f04e8bed9538",
+      "role": "current"
+    },
+    {
+      "id": "icici-lounges",
+      "title": "ICICI debit lounge directory",
+      "url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/debit-card-lounge-list.pdf",
+      "publisher": "ICICI Bank",
+      "locator": "Downloaded directory; scanned pages not yet curated",
+      "retrievedAt": "2026-10-03T13:45:05.088760+00:00",
+      "sha256": "0386788b0ac35913a37e261ed85682aa9dc63b7972e1bbc9a84c1bdb71569078",
+      "role": "directory"
+    },
+    {
+      "id": "icici-terms",
+      "title": "ICICI debit card general terms",
+      "url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/pdf/debit-card-approved-t-and-c.pdf",
+      "publisher": "ICICI Bank",
+      "locator": "General debit card terms; not a replacement for programme-specific FAQ",
+      "retrievedAt": "2026-10-03T13:45:04.605907+00:00",
+      "sha256": "6de5e03bf1361632540c30e6b40a2c9667a6b98e0fa792034305874d134d89ea",
+      "role": "current"
+    },
+    {
+      "id": "hdfc-regalia-gold-2026",
+      "title": "Regalia Gold lounge terms \u2022 July 2026",
+      "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/pdfs/lounge-t-and-cs-and-list-Regalia-Gold.pdf",
+      "publisher": "HDFC Bank",
+      "locator": "Page 1: new terms effective 01-07-2026",
+      "retrievedAt": "2026-10-03T13:45:04.238251+00:00",
+      "sha256": "39d3bf8aee91f086f2559c272286c60a3136f3d5ef3ab7de890d4b2b312647e9",
+      "role": "current"
+    },
+    {
+      "id": "hdfc-check-spend",
+      "title": "Regalia Gold NetBanking eligibility guide",
+      "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/regalia-gold-credit-card/rg-domestic-lounge-netbanking-process.pdf",
+      "publisher": "HDFC Bank",
+      "locator": "Page 1: \u20b960,000 in a calendar quarter, next-quarter access",
+      "retrievedAt": "2026-10-03T13:45:04.801028+00:00",
+      "sha256": "ac4a53764287b4fb17c18c68dd469bb2076488bd41a8b23a6b59413877261faf",
+      "role": "current"
+    },
+    {
+      "id": "hdfc-legacy",
+      "title": "Regalia Gold travel article \u2022 April 2024",
+      "url": "https://www.hdfcbank.com/personal/resources/learning-centre/pay/why-is-regalia-gold-credit-card-the-best-travel-credit-card",
+      "publisher": "HDFC Bank",
+      "locator": "Historical article: 12 annual India visits",
+      "retrievedAt": "2026-10-03T13:47:27.695271+00:00",
+      "sha256": "ecc895cdd6ac5f2415e5a823a932101ef5b05573d2db7d9cde6dd621d38971a7",
+      "role": "historical"
+    },
+    {
+      "id": "axis-priority-2026",
+      "title": "Priority debit revisions \u2022 September 2026",
+      "url": "https://www.axis.bank.in/docs/default-source/default-document-library/terms-and-conditions-for-nr-priority-debit-card.pdf?sfvrsn=5da9ec52_2",
+      "publisher": "Axis Bank",
+      "locator": "Page 1: lounge programme and excluded categories",
+      "retrievedAt": "2026-10-03T13:45:05.614597+00:00",
+      "sha256": "b622081df5cae473d92256083f5a982f0bea1aa1269ef8708d566ff08b13b4a9",
+      "role": "current"
+    },
+    {
+      "id": "axis-lounges",
+      "title": "Axis debit lounge directory",
+      "url": "https://www.axis.bank.in/docs/default-source/default-document-library/debit-card-lounge-list.pdf?sfvrsn=f43ad662_9",
+      "publisher": "Axis Bank",
+      "locator": "Table 3, page 4: Priority Debit Card / RuPay Platinum NRO",
+      "retrievedAt": "2026-10-03T13:45:05.604332+00:00",
+      "sha256": "884650461351eec08c3822c848beeb6757ff8cff4179e9319904ad8f99ff6a9f",
+      "role": "directory"
+    },
+    {
+      "id": "axis-product",
+      "title": "Priority debit current product page",
+      "url": "https://www.axis.bank.in/cards/debit-card/priority-debit-card",
+      "publisher": "Axis Bank",
+      "locator": "Features and benefits: 2 domestic visits per quarter",
+      "retrievedAt": "2026-10-03T13:51:00.129746+00:00",
+      "sha256": "ac27f090614a0bbb88b35819ee1c472ea2a02ed27141aecee407dc6a455befbc",
+      "role": "current"
+    }
+  ],
+  "policies": [
+    {
+      "_type": "loungePolicy",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "openedOnOrAfter": "2025-08-01",
+      "programRequired": true,
+      "releaseDay": 5,
+      "conflictIds": [],
+      "notes": [],
+      "card": "icici-wealth-world",
+      "issuer": "ICICI Bank",
+      "validFrom": "2025-08-01",
+      "window": "previous-quarter",
+      "quota": 2,
+      "waiver": "none",
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "accessMethod": "Present the exact eligible card at a bank-listed domestic airport lounge; bank validation and lounge admission still apply.",
+      "spendNotes": "Use eligible debit card spending from the full preceding calendar quarter. Access starts on the fifth after quarter end.",
+      "_id": "policy-icici-savings",
+      "title": "Wealth World \u2022 individual savings",
+      "accountTypes": [
+        "savings"
+      ],
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 10000,
+          "label": "Previous-quarter debit spend"
+        },
+        {
+          "kind": "amount",
+          "field": "balance",
+          "min": 1000000,
+          "label": "Deposits + account balance"
+        },
+        {
+          "kind": "amount",
+          "field": "relationship",
+          "min": 5000000,
+          "label": "Total programme relationship"
+        }
+      ]
+    },
+    {
+      "_type": "loungePolicy",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "openedOnOrAfter": null,
+      "programRequired": true,
+      "releaseDay": 5,
+      "conflictIds": [],
+      "notes": [],
+      "card": "icici-wealth-world",
+      "issuer": "ICICI Bank",
+      "validFrom": "2025-08-01",
+      "window": "previous-quarter",
+      "quota": 2,
+      "waiver": "none",
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "accessMethod": "Present the exact eligible card at a bank-listed domestic airport lounge; bank validation and lounge admission still apply.",
+      "spendNotes": "Use eligible debit card spending from the full preceding calendar quarter. Access starts on the fifth after quarter end.",
+      "_id": "policy-icici-salary",
+      "title": "Wealth World \u2022 salary account",
+      "accountTypes": [
+        "salary"
+      ],
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 10000,
+          "label": "Previous-quarter debit spend"
+        }
+      ]
+    },
+    {
+      "_type": "loungePolicy",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "openedOnOrAfter": null,
+      "programRequired": true,
+      "releaseDay": 5,
+      "conflictIds": [],
+      "notes": [],
+      "card": "icici-wealth-world",
+      "issuer": "ICICI Bank",
+      "validFrom": "2025-08-01",
+      "window": "previous-quarter",
+      "quota": 2,
+      "waiver": "none",
+      "sourceIds": [
+        "icici-wealth"
+      ],
+      "accessMethod": "Present the exact eligible card at a bank-listed domestic airport lounge; bank validation and lounge admission still apply.",
+      "spendNotes": "Use eligible debit card spending from the full preceding calendar quarter. Access starts on the fifth after quarter end.",
+      "_id": "policy-icici-family",
+      "title": "Wealth World \u2022 family savings",
+      "accountTypes": [
+        "family-savings"
+      ],
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 10000,
+          "label": "Previous-quarter debit spend"
+        },
+        {
+          "kind": "family",
+          "label": "1.5\u00d7 programme eligibility at family ID"
+        }
+      ]
+    },
+    {
+      "_type": "loungePolicy",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "openedOnOrAfter": null,
+      "programRequired": false,
+      "releaseDay": 1,
+      "conflictIds": [
+        "conflict-hdfc-annual-quarterly"
+      ],
+      "notes": [
+        "New cards opened in the last month of the prior quarter may be exempted; verify entitlement with the bank."
+      ],
+      "_id": "policy-hdfc-regalia-gold-202607",
+      "card": "hdfc-regalia-gold",
+      "issuer": "HDFC Bank",
+      "title": "Regalia Gold \u2022 India lounge benefit",
+      "validFrom": "2026-07-01",
+      "accountTypes": [
+        "savings",
+        "salary",
+        "family-savings",
+        "unknown"
+      ],
+      "window": "previous-quarter",
+      "quota": 3,
+      "waiver": "last-month-next-quarter-conditional",
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 60000,
+          "label": "Previous-quarter settled retail spend"
+        }
+      ],
+      "sourceIds": [
+        "hdfc-regalia-gold-2026",
+        "hdfc-check-spend"
+      ],
+      "accessMethod": "Swipe the Regalia Gold card at a listed lounge. A \u20b92 validation charge is reversed. No lounge vouchers are issued under these terms.",
+      "spendNotes": "Only settled retail debit transactions count. EMI transactions do not count. The settlement date determines the qualifying quarter."
+    },
+    {
+      "_type": "loungePolicy",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "openedOnOrAfter": null,
+      "programRequired": false,
+      "releaseDay": 2,
+      "conflictIds": [],
+      "notes": [],
+      "_id": "policy-axis-priority-202609",
+      "card": "axis-priority",
+      "issuer": "Axis Bank",
+      "title": "Priority debit \u2022 revised spend requirement",
+      "validFrom": "2026-09-01",
+      "accountTypes": [
+        "savings",
+        "salary",
+        "family-savings",
+        "unknown"
+      ],
+      "window": "previous-three-months",
+      "quota": 2,
+      "waiver": "issue-month-plus-three",
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 10000,
+          "label": "Billed debit spend in previous three calendar months"
+        }
+      ],
+      "sourceIds": [
+        "axis-priority-2026",
+        "axis-product",
+        "axis-lounges"
+      ],
+      "accessMethod": "Use the eligible Priority debit card at a lounge listed in Table 3. Entry is subject to bank validation and operator conditions.",
+      "spendNotes": "From 1 October 2026, exclude UPI, wallet reloads, credit card bill payments and cash withdrawals. Use billed transactions in the previous three calendar months. Eligibility updates on the 2nd of each month; the 1st carries the previous month\u2019s status."
+    }
+  ],
+  "lounges": [
+    {
+      "_id": "lounge-axis-22",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "DEL",
+      "terminal": "T1",
+      "flightType": "domestic",
+      "name": "Encalm Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 22"
+    },
+    {
+      "_id": "lounge-axis-23",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "DEL",
+      "terminal": "T3",
+      "flightType": "domestic",
+      "name": "Encalm Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 23"
+    },
+    {
+      "_id": "lounge-axis-24",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "DEL",
+      "terminal": "T3",
+      "flightType": "international",
+      "name": "Encalm Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 24"
+    },
+    {
+      "_id": "lounge-axis-3",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BLR",
+      "terminal": "T1",
+      "flightType": "domestic",
+      "name": "080 Domestic Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 3"
+    },
+    {
+      "_id": "lounge-axis-4",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BLR",
+      "terminal": "T2",
+      "flightType": "international",
+      "name": "080 International Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 4"
+    },
+    {
+      "_id": "lounge-axis-18",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BOM",
+      "terminal": "T1B",
+      "flightType": "domestic",
+      "name": "Adani Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 18"
+    },
+    {
+      "_id": "lounge-axis-19",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BOM",
+      "terminal": "T2",
+      "flightType": "domestic",
+      "name": "Travel Club T2",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 19"
+    },
+    {
+      "_id": "lounge-axis-20",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BOM",
+      "terminal": "T1C",
+      "flightType": "domestic",
+      "name": "Travel Club T1",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 20"
+    },
+    {
+      "_id": "lounge-axis-21",
+      "_type": "lounge",
+      "card": "axis-priority",
+      "airport": "BOM",
+      "terminal": "T2",
+      "flightType": "international",
+      "name": "Adani East Lounge",
+      "sourceId": "axis-lounges",
+      "locator": "Table 3, page 4, row 21"
+    }
+  ],
+  "conflicts": [
+    {
+      "_id": "conflict-hdfc-annual-quarterly",
+      "_type": "policyConflict",
+      "card": "hdfc-regalia-gold",
+      "title": "Annual marketing claim vs dated quarterly eligibility",
+      "sourceIds": [
+        "hdfc-legacy",
+        "hdfc-regalia-gold-2026"
+      ],
+      "status": "resolved",
+      "decision": "Use the detailed dated July 2026 lounge terms for trips on or after 1 July 2026. The 2024 article does not establish unconditional access today. The annual total alone omits preceding-quarter spend, per-quarter quota, EMI exclusions and issuance exception. This decision is an editorial interpretation, not bank confirmation.",
+      "decidedAt": "2026-10-03"
+    }
+  ]
+}

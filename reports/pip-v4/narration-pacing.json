@@ -1,0 +1,47 @@
+{
+  "totalNarrationSeconds": 143.739792,
+  "spokenWords": 356,
+  "averageWordsPerMinute": 148.6,
+  "openingWordsPerMinute": 139.1,
+  "openingSeconds": 32.35725,
+  "examplesTempo": 0.82,
+  "preservesPitch": true,
+  "source": "Measured processed WAV sample counts; whitespace word counts, approximate linguistic rate",
+  "scenes": [
+    {
+      "id": "v4-problem",
+      "seconds": 32.35725,
+      "wordsPerMinute": 139.1
+    },
+    {
+      "id": "v4-guide",
+      "seconds": 13.828958,
+      "wordsPerMinute": 138.8
+    },
+    {
+      "id": "v4-02",
+      "seconds": 19.068958,
+      "wordsPerMinute": 147.9
+    },
+    {
+      "id": "v4-03",
+      "seconds": 20.992917,
+      "wordsPerMinute": 148.6
+    },
+    {
+      "id": "v4-04",
+      "seconds": 19.997542,
+      "wordsPerMinute": 147.0
+    },
+    {
+      "id": "v4-05",
+      "seconds": 17.678125,
+      "wordsPerMinute": 162.9
+    },
+    {
+      "id": "v4-06",
+      "seconds": 19.816042,
+      "wordsPerMinute": 160.5
+    }
+  ]
+}

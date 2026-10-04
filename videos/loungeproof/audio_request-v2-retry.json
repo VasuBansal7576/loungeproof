@@ -1,0 +1,14 @@
+{
+  "provider": "kokoro",
+  "voice": "af_heart",
+  "speed": "1.10",
+  "lines": [
+    {
+      "id": "v2-06",
+      "text": "We tested thirty eight cases against the live Sanity dataset, forty five automated tests, and four live agent scenarios. Real bank documents. Invented traveller facts. This pilot checks published conditions; admission stays with the bank and lounge. Know the rule. Keep the proof."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  }
+}

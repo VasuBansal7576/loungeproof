@@ -1,0 +1,19 @@
+{
+  "provider": "kokoro",
+  "voice": "bf_emma",
+  "lang": "en-gb",
+  "speed": 0.82,
+  "lines": [
+    {
+      "id": "v4-problem",
+      "text": "Your card says complimentary lounge access. So you get to the airport expecting to walk in. But access can depend on last quarter's spending, visits you've already used, and the exact terminal. Then you find an old bank page that says something different. The problem is knowing which rule applies to your trip, before you're standing at the desk. LoungeProof brings those conditions together, checks the dates, and shows the bank source behind the answer."
+    },
+    {
+      "id": "v4-guide",
+      "text": "I'm Pip, your trip guide. Start with your exact card and flight details. I'll show you what passes, what still needs confirming, and where the rule came from. Let's try three trips."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  }
+}

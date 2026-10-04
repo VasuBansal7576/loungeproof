@@ -1,0 +1,109 @@
+{
+  "bgm": null,
+  "voices": [
+    {
+      "frame": 1,
+      "id": "v3-01",
+      "path": "assets/voice/pip-final/v3-01.wav",
+      "duration_s": 9.893458,
+      "words": []
+    },
+    {
+      "frame": 2,
+      "id": "v3-02",
+      "path": "assets/voice/pip-final/v3-02.wav",
+      "duration_s": 15.651958,
+      "words": []
+    },
+    {
+      "frame": 3,
+      "id": "v3-03",
+      "path": "assets/voice/pip-final/v3-03.wav",
+      "duration_s": 17.228042,
+      "words": []
+    },
+    {
+      "frame": 4,
+      "id": "v3-04",
+      "path": "assets/voice/pip-final/v3-04.wav",
+      "duration_s": 16.415333,
+      "words": []
+    },
+    {
+      "frame": 5,
+      "id": "v3-05",
+      "path": "assets/voice/pip-final/v3-05.wav",
+      "duration_s": 14.51125,
+      "words": []
+    },
+    {
+      "frame": 6,
+      "id": "v3-06",
+      "path": "assets/voice/pip-final/v3-06.wav",
+      "duration_s": 16.266417,
+      "words": []
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "id": "v2-01",
+      "name": "whoosh",
+      "file": "assets/sfx/whoosh.mp3",
+      "source": "local",
+      "offset_s": 6.15,
+      "duration_s": 0.57,
+      "volume": 0.2
+    },
+    {
+      "frame": 2,
+      "id": "v2-02",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 9.83,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 3,
+      "id": "v2-03",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 10.01,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 4,
+      "id": "v2-04",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 12.0,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 5,
+      "id": "v2-05",
+      "name": "click-soft",
+      "file": "assets/sfx/click-soft.mp3",
+      "source": "local",
+      "offset_s": 8.2,
+      "duration_s": 0.37,
+      "volume": 0.2
+    },
+    {
+      "frame": 6,
+      "id": "v2-06",
+      "name": "chime",
+      "file": "assets/sfx/chime.mp3",
+      "source": "local",
+      "offset_s": 12.0,
+      "duration_s": 2.5,
+      "volume": 0.16
+    }
+  ]
+}

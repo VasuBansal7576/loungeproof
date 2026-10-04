@@ -1,0 +1,301 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/lpv3-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      }
+    ],
+    "filesScanned": 7
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 5,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 21.778,
+        "selector": "#lpv3-02-amount",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 378.39,
+          "top": 494.3,
+          "right": 696.12,
+          "bottom": 615.01,
+          "width": 317.73,
+          "height": 120.71
+        },
+        "containerSelector": "#lpv3-02-or",
+        "text": "₹12 lakh",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/lpv3-02.html",
+        "bbox": {
+          "x": 378.39,
+          "y": 494.3,
+          "width": 317.73,
+          "height": 120.71
+        },
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 24.99,
+        "selector": "div.lpv3-02-crop > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 949,
+          "top": 345,
+          "right": 1844,
+          "bottom": 1165,
+          "width": 895,
+          "height": 820
+        },
+        "containerSelector": "div.lpv3-02-crop",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 949,
+          "top": 345,
+          "right": 1844,
+          "bottom": 715,
+          "width": 895,
+          "height": 370
+        },
+        "overflow": {
+          "bottom": 450
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv3-02.html",
+        "bbox": {
+          "x": 949,
+          "y": 345,
+          "width": 895,
+          "height": 820
+        },
+        "firstSeen": 24.99,
+        "lastSeen": 24.99,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 54.979,
+        "selector": "div.lpv3-04-verdict > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 76,
+          "top": 185,
+          "right": 1257.39,
+          "bottom": 1372.98,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "containerSelector": "div.lpv3-04-verdict",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 185,
+          "right": 1257.39,
+          "bottom": 647,
+          "width": 1181.39,
+          "height": 462
+        },
+        "overflow": {
+          "bottom": 725.98
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv3-04.html",
+        "bbox": {
+          "x": 76,
+          "y": 185,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "firstSeen": 54.979,
+        "lastSeen": 54.979,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 54.979,
+        "selector": "div.lpv3-04-directory > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 76,
+          "top": -357.78,
+          "right": 1257.39,
+          "bottom": 830.2,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "containerSelector": "div.lpv3-04-directory",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 676.19,
+          "right": 1257.39,
+          "bottom": 788.19,
+          "width": 1181.39,
+          "height": 112
+        },
+        "overflow": {
+          "top": 1033.97,
+          "bottom": 42.01
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv3-04.html",
+        "bbox": {
+          "x": 76,
+          "y": -357.78,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "firstSeen": 54.979,
+        "lastSeen": 54.979,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 54.979,
+        "selector": "div.lpv3-04-directory > img:nth-of-type(1)",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 76,
+          "top": -357.78,
+          "right": 1257.39,
+          "bottom": 830.2,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "containerSelector": "div.lpv3-04-directory",
+        "text": "",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 676.19,
+          "right": 1257.39,
+          "bottom": 788.19,
+          "width": 1181.39,
+          "height": 112
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv3-04.html",
+        "bbox": {
+          "x": 76,
+          "y": -357.78,
+          "width": 1181.39,
+          "height": 1187.98
+        },
+        "firstSeen": 54.979,
+        "lastSeen": 54.979,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 89.965,
+    "samples": [
+      4.998,
+      14.994,
+      24.99,
+      34.986,
+      44.983,
+      54.979,
+      64.975,
+      74.971,
+      84.967
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 5,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "specPath": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/index.motion.json",
+    "samples": 300
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      4.998,
+      24.99,
+      44.983,
+      64.975,
+      84.967
+    ],
+    "checked": 35,
+    "passed": 35
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.114",
+    "latestVersion": "0.8.114",
+    "updateAvailable": false
+  }
+}

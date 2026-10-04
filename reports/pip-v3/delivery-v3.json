@@ -1,0 +1,75 @@
+{
+  "video": "videos/loungeproof/loungeproof-walkthrough-v3.mp4",
+  "inAppVideo": "public/walkthrough.mp4",
+  "durationSeconds": 89.966667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioChannels": 2,
+  "bytes": 28610519,
+  "sha256": "8fb2050ed428e2ac71d1a1cca11f069ed820722534314fa4d198998a7590bcac",
+  "verification": {
+    "deterministicTests": [
+      45,
+      45
+    ],
+    "liveSanityPolicyCases": [
+      38,
+      38
+    ],
+    "liveAgentCases": [
+      4,
+      4
+    ],
+    "additionalRedesignedAxisAgentRun": "Completed initial_context and knowledge_base_read; answer reviewed",
+    "productionBuild": "pass",
+    "videoDecode": "pass",
+    "encodedFramesInspected": 7,
+    "videoChecks": {
+      "runtime": "pass",
+      "layout": "pass",
+      "contrast": "pass",
+      "motion": "pass",
+      "motionSamples": 300,
+      "lintErrors": 0,
+      "reviewedLintWarnings": 1
+    },
+    "tour": {
+      "desktopPlayback": "pass; 89.966667 seconds, unmuted, no error",
+      "clickSeek": "pass; Axis 42.77s",
+      "keyboardSeek": "pass; proof 73.74s",
+      "escapeAndFocusReturn": "pass",
+      "mobileViewport": [
+        390,
+        844
+      ],
+      "mobileDocumentWidth": 390,
+      "mobileSeek": "pass; HDFC 25.71s",
+      "mobileDialogWidth": 352
+    },
+    "websiteAudit": "reports/pip-v3/browser-audit.json"
+  },
+  "bankDocuments": "Real public sources",
+  "travellerFacts": "Invented examples",
+  "published": false,
+  "revision": "Pip v3: video voice/performance, silent interactive website",
+  "voice": {
+    "provider": "local Kokoro",
+    "voice": "bf_emma",
+    "speed": 1.1,
+    "pitchLiftPercent": 4,
+    "websiteSpeech": false,
+    "mouthMotion": "actual WAV RMS at 15Hz"
+  },
+  "render": {
+    "quality": "delivery",
+    "durationSeconds": 186.1,
+    "gpu": "hardware",
+    "canvas": [
+      1920,
+      1080
+    ]
+  }
+}

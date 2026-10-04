@@ -1,0 +1,550 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 29,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-scene-clip-1\" starts with a digit, so the common selector `#01-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#01-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/01-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-scene-clip-1\" starts with a digit, so the common selector `#02-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#02-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/02-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-scene-clip-2\" starts with a digit, so the common selector `#02-scene-clip-2` throws a SyntaxError in querySelector().",
+        "selector": "#02-scene-clip-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/02-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/02-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-scene-clip-1\" starts with a digit, so the common selector `#03-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#03-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/03-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-scene-clip-2\" starts with a digit, so the common selector `#03-scene-clip-2` throws a SyntaxError in querySelector().",
+        "selector": "#03-scene-clip-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/03-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/03-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-scene-clip-1\" starts with a digit, so the common selector `#04-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#04-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/04-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-scene-clip-2\" starts with a digit, so the common selector `#04-scene-clip-2` throws a SyntaxError in querySelector().",
+        "selector": "#04-scene-clip-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/04-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-scene-clip-3\" starts with a digit, so the common selector `#04-scene-clip-3` throws a SyntaxError in querySelector().",
+        "selector": "#04-scene-clip-3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/04-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-scene-clip-4\" starts with a digit, so the common selector `#04-scene-clip-4` throws a SyntaxError in querySelector().",
+        "selector": "#04-scene-clip-4",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/04-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-scene-clip-5\" starts with a digit, so the common selector `#04-scene-clip-5` throws a SyntaxError in querySelector().",
+        "selector": "#04-scene-clip-5",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/04-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-scene-clip-1\" starts with a digit, so the common selector `#05-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#05-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/05-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-clip-1\" starts with a digit, so the common selector `#06-scene-clip-1` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-clip-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-verification\" starts with a digit, so the common selector `#06-scene-verification` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-verification",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-rule\" starts with a digit, so the common selector `#06-scene-rule` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-rule",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-source\" starts with a digit, so the common selector `#06-scene-source` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-source",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-live\" starts with a digit, so the common selector `#06-scene-live` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-live",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-tests\" starts with a digit, so the common selector `#06-scene-tests` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-tests",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-real\" starts with a digit, so the common selector `#06-scene-real` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-real",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-invented\" starts with a digit, so the common selector `#06-scene-invented` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-invented",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-pilot\" starts with a digit, so the common selector `#06-scene-pilot` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-pilot",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-accounts\" starts with a digit, so the common selector `#06-scene-accounts` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-accounts",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-admission\" starts with a digit, so the common selector `#06-scene-admission` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-admission",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-scope\" starts with a digit, so the common selector `#06-scene-scope` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-scope",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-end\" starts with a digit, so the common selector `#06-scene-end` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-end",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-know\" starts with a digit, so the common selector `#06-scene-know` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-know",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-proof\" starts with a digit, so the common selector `#06-scene-proof` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-proof",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-scene-closeaccent\" starts with a digit, so the common selector `#06-scene-closeaccent` throws a SyntaxError in querySelector().",
+        "selector": "#06-scene-closeaccent",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/06-scene.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      }
+    ],
+    "filesScanned": 7
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 119.68,
+    "samples": [
+      6.649,
+      19.947,
+      33.244,
+      46.542,
+      59.84,
+      73.138,
+      86.436,
+      99.733,
+      113.031
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      6.649,
+      33.244,
+      59.84,
+      86.436,
+      113.031
+    ],
+    "checked": 28,
+    "passed": 28
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.114",
+    "latestVersion": "0.8.114",
+    "updateAvailable": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "tts_provider": "kokoro",
+  "voice_id": "bf_emma",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "v4-problem",
+      "path": "assets/voice/v4-problem.wav",
+      "duration_s": 26.56,
+      "words": []
+    },
+    {
+      "id": "v4-guide",
+      "path": "assets/voice/v4-guide.wav",
+      "duration_s": 11.371,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 37.931
+}

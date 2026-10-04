@@ -1,0 +1,133 @@
+<template>
+  <style>
+    @font-face { font-family: 'DM Sans'; src: url('assets/fonts/dm-sans.ttf') format('truetype'); font-weight: 100 900; font-style: normal; }
+    #root { position: relative; width:100%; height:100%; overflow: hidden; color: #0d1019; font-family: 'DM Sans'; }
+    .lpv4-05-ground { position: absolute; inset: 0; background: #f3f5fa; }
+    .lpv4-05-stage { position: absolute; inset: 0; }
+    .lpv4-05-heading { position: absolute; left: 76px; top: 64px; margin: 0; font-size: 112px; font-weight: 850; line-height: .98; letter-spacing: -5px; transform-origin: top left; }
+    .lpv4-05-pipeline { position: absolute; left: 76px; top: 280px; width: 850px; height: 190px; transform-origin: top left; }
+    .lpv4-05-node { position: absolute; left: 50%; top: 50%; width: 240px; height: 150px; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 20px; font-size: 36px; font-weight: 750; line-height: 1.08; border-top: 3px solid #3452ff; }
+    .lpv4-05-number { font-size: 22px; font-weight: 550; margin-bottom: 12px; color: #3452ff; }
+    .lpv4-05-focus { position: absolute; inset: 0; background: #3452ff; color: #f3f5fa; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+    .lpv4-05-focus .lpv4-05-number { color: #f8f36b; }
+    .lpv4-05-kb { position: absolute; left: 980px; top: 284px; width: 864px; height: 550px; }
+    .lpv4-05-label { font-size: 24px; font-weight: 650; letter-spacing: 2px; }
+    .lpv4-05-kbview { position: absolute; top: 46px; width: 864px; height: 504px; overflow: hidden; border-radius: 16px; background: #0d1019; }
+    .lpv4-05-kbview img { position: absolute; width: 1470px; height: 715px; max-width: none; left: -330px; top: -4px; }
+    .lpv4-05-pip { position: absolute; left: 150px; top: 468px; width: 400px; height: 400px; transform-origin: center; }
+    .lpv4-05-pip img { width: 100%; height: 100%; object-fit: contain; }
+    .lpv4-05-token { position: absolute; left: 790px; top: 390px; width: 34px; height: 34px; border: 5px solid #0d1019; background: #f8f36b; border-radius: 50%; }
+    .lpv4-05-answer { position: absolute; left: 960px; top: 330px; width: 835px; height: 443px; transform-origin: top left; }
+    .lpv4-05-answer img { display: block; width: 835px; height: 443px; border-radius: 12px; }
+    .lpv4-05-trace { position: absolute; left: 76px; top: 693px; width: 545px; }
+    .lpv4-05-trace-title { color: #3452ff; margin-bottom: 15px; font-size: 22px; letter-spacing: 1.5px; font-weight: 750; }
+    .lpv4-05-call { font-size: 30px; line-height: 1.55; font-weight: 650; white-space: nowrap; }
+    .lpv4-05-tick { display: inline-block; width: 35px; color: #3452ff; }
+    .lpv4-05-sources { position: absolute; left: 1340px; top: 178px; font-size: 36px; font-weight: 750; background: #f8f36b; padding: 8px 22px; }
+  </style>
+  <div id="root" data-composition-id="lpv4-05" data-width="1920" data-height="1080" data-duration="17.678125">
+    <div id="lpv4-05-clip-1" class="clip lpv4-05-ground" data-start="0" data-duration="17.678125" data-track-index="0"></div>
+    <div id="lpv4-05-clip-2" class="clip lpv4-05-stage" data-start="0" data-duration="17.678125" data-track-index="1">
+      <h1 id="lpv4-05-heading" class="lpv4-05-heading">FROM SOURCE<br>TO CONTEXT.</h1>
+      <div id="lpv4-05-pipeline" class="lpv4-05-pipeline" aria-label="Explanatory source-to-context pipeline">
+        <div id="lpv4-05-source" class="lpv4-05-node" data-target-x="-285" data-target-y="0"><span class="lpv4-05-number">01 / SOURCE</span>Original<br>source</div>
+        <div id="lpv4-05-policy" class="lpv4-05-node" data-target-x="0" data-target-y="0"><span class="lpv4-05-number">02 / POLICY</span>Dated<br>policy</div>
+        <div id="lpv4-05-kbnode" class="lpv4-05-node" data-target-x="285" data-target-y="0"><span class="lpv4-05-number">03 / SANITY</span>Knowledge<br>Base</div>
+      </div>
+      <div id="lpv4-05-kb" class="lpv4-05-kb"><div class="lpv4-05-label">SANITY / ORIGINAL CAPTURE</div><div class="lpv4-05-kbview"><img src="assets/v2/sanity-kb.jpg" alt="Actual Sanity knowledge base with source entries and dated lounge policy" /></div></div>
+      <div id="lpv4-05-pip" class="lpv4-05-pip"><svg style="width:100%;height:100%;display:block" class="pip-rig lpv4-05-actor" viewBox="0 0 480 480" aria-hidden="true"><defs><linearGradient id="lpv4-05-_R_0_-shell" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7095ff"></stop><stop offset=".45" stop-color="#3452ff"></stop><stop offset="1" stop-color="#1b2aac"></stop></linearGradient><linearGradient id="lpv4-05-_R_0_-edge" x1="0" x2="1"><stop stop-color="#7ac8ff"></stop><stop offset="1" stop-color="#385eea"></stop></linearGradient><linearGradient id="lpv4-05-_R_0_-visor" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#293057"></stop><stop offset="1" stop-color="#080c20"></stop></linearGradient><linearGradient id="lpv4-05-_R_0_-paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#bfcaff"></stop></linearGradient></defs><ellipse class="rig-shadow" cx="246" cy="421" rx="111" ry="15" fill="#020613" opacity=".22"></ellipse><g class="rig-all"><g class="rig-feet"><g class="rig-foot-left"><path d="M170 361 205 360 209 401Q206 419 164 417Q143 414 150 399Z" fill="url(#lpv4-05-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M155 406Q174 411 203 405" fill="none" stroke="#7d9dff" stroke-width="4"></path></g><g class="rig-foot-right"><path d="M273 360 309 357 331 399Q338 417 304 420Q277 422 273 403Z" fill="url(#lpv4-05-_R_0_-shell)" stroke="#172d9d" stroke-width="3"></path><path d="M282 408Q303 414 324 406" fill="none" stroke="#7d9dff" stroke-width="4"></path></g></g><g class="rig-torso"><g class="rig-arm-left"><path d="M155 239Q122 229 102 204" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m113 211-62-48 20 71 42-8 13-20Z" fill="url(#lpv4-05-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m51 163 54 62-34 9" fill="#3452ff"></path><path d="m51 163 62 48-8 14Z" fill="#f3f5fa"></path></g><g class="rig-arm-right"><path d="M318 240Q351 253 367 279" fill="none" stroke="#3048ce" stroke-width="20" stroke-linecap="round"></path><path d="m355 267 73 51-59-2-23-35Z" fill="url(#lpv4-05-_R_0_-paper)" stroke="#a5b9ef" stroke-width="2"></path><path d="m355 267 73 51-61-18Z" fill="#f3f5fa"></path><path d="m367 300 61 18-59-2Z" fill="#3452ff"></path></g><path d="M164 77 328 92Q349 95 346 121L323 346Q320 371 296 376L143 360Z" fill="#182bac" stroke="#1d2ea9" stroke-width="4"></path><path d="M159 77Q140 76 137 98L131 128Q153 137 145 157Q141 169 127 168L112 299Q131 311 124 330Q118 344 115 344L115 350Q114 366 135 369L289 389Q310 392 313 371L323 336Q301 326 308 306Q312 295 327 294L344 164Q324 153 331 134Q336 121 347 119L351 109Q354 91 333 88Z" fill="url(#lpv4-05-_R_0_-shell)" stroke="#8da8ff" stroke-width="3"></path><path d="m283 83 31 4-29 297-30-4Z" fill="url(#lpv4-05-_R_0_-edge)" opacity=".85"></path><path d="m299 110-21 244" fill="none" stroke="#c0e4ff" stroke-width="5" stroke-dasharray="11 15" stroke-linecap="round"></path><path d="m154 93 116 14" fill="none" stroke="#acbdff" stroke-width="4" stroke-linecap="round" opacity=".65"></path><path d="m142 330 92 11" fill="none" stroke="#0c268f" stroke-width="3" stroke-linecap="round" opacity=".3"></path><g class="rig-head"><path d="M166 150Q133 162 135 207Q137 246 179 255L250 264Q278 260 281 218Q287 171 251 160Z" fill="url(#lpv4-05-_R_0_-visor)" stroke="#172044" stroke-width="5"></path><path d="M150 181Q169 158 197 168" fill="none" stroke="#6b78ae" stroke-width="5" stroke-linecap="round" opacity=".6"></path><g class="rig-look"><g class="rig-eyes"><path d="M171 201Q177 176 187 185Q199 194 189 218Q183 211 174 219Q170 211 171 201Z" fill="#f8f36b"></path><path d="M224 209Q232 184 243 194Q253 204 243 226Q236 217 227 227Q222 219 224 209Z" fill="#f8f36b"></path></g><g class="rig-brows" fill="none" stroke="#f8f36b" stroke-width="4" stroke-linecap="round"><path d="m169 181 16-4"></path><path d="m229 186 15 7"></path></g><g class="rig-mouth"><ellipse cx="209" cy="240" rx="11" ry="8" fill="#f8f36b"></ellipse><ellipse cx="209" cy="236" rx="6" ry="2" fill="#ffffc6"></ellipse></g></g></g><path d="m149 280 74 9" stroke="#bdcdff" stroke-width="3" opacity=".45"></path><path d="m148 289 50 6" stroke="#bdcdff" stroke-width="2" opacity=".45"></path><rect x="244" y="296" width="19" height="30" rx="3" fill="#a9c7ff" opacity=".7" transform="rotate(7 244 296)"></rect><path d="m248 303 11 1m-12 5 11 1m-12 5 11 1" stroke="#2441bb" stroke-width="2"></path></g></g></svg></div>
+      <div id="lpv4-05-token" class="lpv4-05-token" aria-label="Explanatory evidence token"></div>
+      <div id="lpv4-05-answer" class="lpv4-05-answer"><img src="assets/v2/live-agent.png" alt="Completed live agent answer with verified context read, source citations and source links" /></div>
+      <div id="lpv4-05-trace" class="lpv4-05-trace"><div id="lpv4-05-trace-title" class="lpv4-05-trace-title">VERIFIED RUNTIME TRACE</div><div id="lpv4-05-call1" class="lpv4-05-call"><span class="lpv4-05-tick">✓</span>initial_context</div><div id="lpv4-05-call2" class="lpv4-05-call"><span class="lpv4-05-tick">✓</span>knowledge_base_read</div></div>
+      <div id="lpv4-05-sources" class="lpv4-05-sources">Sources attached.</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines['lpv4-05'] = tl;
+      const s = (name) => '#lpv4-05-' + name;
+      tl.fromTo(s('heading'), {y: 22, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: 'power3.out'}, 0);
+      tl.fromTo(s('pip'), {x: -35, opacity: 0}, {x: 0, opacity: 1, duration: .48, ease: 'power3.out'}, 0);
+      [['source', -285, 1.0], ['policy', 0, 2.05], ['kbnode', 285, 3.15]].forEach(([name, x, at]) => {
+        tl.fromTo(s(name), {xPercent: -50, yPercent: -50, x: 0, y: 0, scale: .6, opacity: 0}, {x, y: 0, scale: 1, opacity: 1, duration: 1.1, ease: 'power3.out'}, at);
+      });
+      tl.fromTo(s('kb'), {x: 70, opacity: 0}, {x: 0, opacity: 1, duration: .8, ease: 'power3.out'}, 2.9);
+      tl.to(s('pip'), {x: 290, duration: 2.3, ease: 'power2.inOut'}, 1.5);
+      // The first seam carries the photographed context left into the answer.
+      tl.to(s('kb'), {x: -230, duration: .3, ease: 'power4.in'}, 4.85);
+      tl.to(s('kb'), {opacity: 0, duration: .28, ease: 'power1.in'}, 4.87);
+      tl.fromTo(s('answer'), {x: 230, opacity: 0}, {x: 0, opacity: 1, duration: .3, ease: 'power4.out'}, 5.15);
+      tl.to(s('heading'), {scale: .64, duration: .65, ease: 'power2.inOut'}, 4.85);
+      tl.to(s('pipeline'), {scale: .64, y: -80, duration: .7, ease: 'power2.inOut'}, 4.85);
+      tl.to(s('kbnode'), {backgroundColor: '#3452ff', color: '#f3f5fa', duration: .2}, 5);
+      tl.to('#lpv4-05-kbnode > .lpv4-05-number', {color: '#f8f36b', duration: .2}, 5);
+      // Existing KB node compresses, then releases with an adjacent spring.
+      tl.to(s('kbnode'), {scale: .92, duration: .16, ease: 'none'}, 5.1);
+      tl.to(s('kbnode'), {scale: 1, duration: .55, ease: 'back.out(1.4)'}, 5.26);
+      tl.to(s('pip'), {x: 30, y: -120, scale: .875, duration: .8, ease: 'power2.inOut'}, 5.15);
+      tl.fromTo(s('token'), {x: -245, y: -135, scale: .5, opacity: 0}, {x: -245, y: -135, scale: 1, opacity: 1, duration: .18}, 5.3);
+      tl.to(s('token'), {x: -430, y: 35, duration: .7, ease: 'power2.inOut'}, 5.48);
+      tl.to(s('token'), {scale: .2, opacity: 0, duration: .22}, 6.18);
+      // These labels annotate an already visible completed capture, never live progress.
+      tl.fromTo(s('trace-title'), {y: 15, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: 'power3.out'}, 6.5);
+      tl.fromTo(s('call1'), {x: -24, opacity: 0}, {x: 0, opacity: 1, duration: .45, ease: 'power3.out'}, 7.05);
+      tl.fromTo(s('call2'), {x: -24, opacity: 0}, {x: 0, opacity: 1, duration: .45, ease: 'power3.out'}, 8.25);
+      // Continuous reframing keeps the original answer and all its citation IDs intact.
+      tl.to(s('answer'), {x: -300, y: -90, scale: 1.4, duration: .85, ease: 'power2.inOut'}, 10);
+      tl.to(s('pip'), {x: -40, y: -135, duration: .85, ease: 'power2.inOut'}, 10);
+      tl.fromTo(s('sources'), {y: 16, opacity: 0}, {y: 0, opacity: 1, duration: .5, ease: 'power3.out'}, 11.65);
+      // Everything is settled by 12.15; final still read lasts 2.122 seconds.
+      tl.to({}, {duration: .001}, 14.271);
+    
+      const retime = 1.016763593;
+      const authoredTweens = tl.getChildren(false,true,false);
+      authoredTweens.forEach(t => { const at=t.startTime()*retime; t.duration(t.duration()*retime); t.startTime(at); });
+      const actor = '.lpv4-05-actor';
+      const joint = part => actor+' .rig-'+part;
+      tl.set('.lpv4-05-actor .rig-mouth',{scaleY:.16,svgOrigin:'209 239'},0);
+      tl.set('.lpv4-05-actor .rig-eyes',{scaleY:1,svgOrigin:'209 206'},0);
+      tl.set('.lpv4-05-actor .rig-torso',{svgOrigin:'235 355'},0);
+      tl.set('.lpv4-05-actor .rig-arm-left',{svgOrigin:'155 239'},0);
+      tl.set('.lpv4-05-actor .rig-arm-right',{svgOrigin:'318 240'},0);
+      tl.set('.lpv4-05-actor .rig-foot-left',{svgOrigin:'185 382'},0);
+      tl.set('.lpv4-05-actor .rig-foot-right',{svgOrigin:'295 382'},0);
+      // Eyelids and gaze change independently; the viewer can see Pip thinking.
+      for(let t=2;t<14.511250-.4;t+=3.2){
+        tl.to('.lpv4-05-actor .rig-eyes',{scaleY:.08,duration:.09,ease:'power2.in'},t);
+        tl.to('.lpv4-05-actor .rig-eyes',{scaleY:1,duration:.13,ease:'power2.out'},t+.09);
+      }
+      for(let t=.4;t<14.511250-1.1;t+=2.7){
+        tl.to('.lpv4-05-actor .rig-torso',{rotation:1.8,y:-3,duration:.55,ease:'sine.inOut'},t);
+        tl.to('.lpv4-05-actor .rig-torso',{rotation:-1,y:0,duration:.65,ease:'sine.inOut'},t+.55);
+      }
+      // A greeting, a point toward the evidence, then an open-handed explanation.
+      tl.to('.lpv4-05-actor .rig-look',{x:-5,y:0,duration:.35}, 3.918038);
+      tl.to('.lpv4-05-actor .rig-arm-left',{rotation:-18,duration:.4}, 4.208263);
+      tl.to('.lpv4-05-actor .rig-arm-right',{rotation:-42,duration:.4,ease:'power3.out'}, 6.675175);
+      tl.to('.lpv4-05-actor .rig-look',{x:4,y:0,duration:.3}, 6.675175);
+      tl.to('.lpv4-05-actor .rig-arm-right',{rotation:-8,duration:.5}, 9.432313);
+      tl.to('.lpv4-05-actor .rig-arm-left',{rotation:18,duration:.4}, 9.722538);
+      tl.to('.lpv4-05-actor .rig-look',{x:0,y:-2,duration:.3}, 11.028550);
+      tl.to('.lpv4-05-actor .rig-arm-left',{rotation:0,duration:.4}, 12.189450);
+      tl.to('.lpv4-05-actor .rig-arm-right',{rotation:-27,duration:.3}, 12.479675);
+      tl.to('.lpv4-05-actor .rig-arm-right',{rotation:0,duration:.35}, 13.205238);
+      // Footfalls during the existing travel into each proof position.
+      for(let k=0;k<4;k++){const t=5.078937+k*.24;
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:-8,rotation:k%2?8:-8,duration:.11},t);
+        tl.to(joint(k%2?'foot-right':'foot-left'),{y:0,rotation:0,duration:.13},t+.11);
+      }
+
+      tl.set('.lpv4-05-actor .rig-head',{svgOrigin:'209 207'},0);
+
+      const finalRetime=1.218235851;
+      tl.getChildren(false,true,false).forEach(t=>{const at=t.startTime()*finalRetime;t.duration(t.duration()*finalRetime);t.startTime(at);});
+
+      const v4Mouth = [1.146,1.25,0.809,0.907,1.11,1.25,1.25,1.25,1.25,1.25,0.983,1.25,1.25,0.868,0.377,0.969,0.939,0.817,0.354,0.16,0.16,0.16,0.16,0.16,0.16,0.242,1.25,1.151,1.25,1.25,0.874,0.245,1.25,1.25,0.351,0.684,1.25,1.25,0.989,0.845,1.063,1.25,1.25,1.25,0.831,0.181,0.509,0.89,0.607,1.25,1.25,0.779,0.765,0.983,0.172,0.52,1.25,1.25,1.164,0.827,0.774,1.039,0.983,0.669,1.119,1.103,0.962,0.968,1.25,1.25,1.232,0.814,0.598,0.72,1.035,0.609,0.192,0.16,0.16,0.16,0.16,0.16,0.16,0.16,0.929,1.25,1.25,1.25,1.25,1.25,1.25,1.25,1.25,0.806,1.165,1.232,1.014,0.365,0.384,1.223,1.25,1.25,0.604,0.629,1.25,0.91,1.102,1.25,1.25,1.25,1.182,0.772,0.594,0.876,1.25,1.25,0.732,0.664,0.384,0.917,0.572,0.779,1.25,1.25,1.25,1.204,0.672,0.801,0.794,1.038,1.068,0.766,0.652,0.287,0.16,0.16,0.16,0.16,0.16,0.16,0.16,1.001,1.25,1.25,0.824,1.057,1.125,1.25,0.836,0.987,1.25,0.45,0.698,1.008,0.837,0.49,1.149,1.211,0.351,1.25,1.25,0.56,1.07,0.798,0.424,0.519,1.25,1.25,1.029,0.717,1.248,0.375,0.519,0.633,0.368,0.568,1.25,1.25,1.133,0.857,0.64,0.569,0.319,0.161,0.16,0.16,0.16,0.16,0.16,0.16,1.15,1.25,1.25,0.329,1.25,1.25,1.25,0.945,0.886,1.25,1.25,1.25,0.829,0.873,1.25,1.145,0.748,1.133,1.157,0.848,1.25,1.196,1.111,0.268,0.289,1.128,0.819,1.25,1.25,1.25,1.092,1.054,1.1,0.819,0.965,1.141,1.25,1.21,0.751,0.345,0.287,0.172,0.185,0.175,0.167,0.163,0.345,1.25,1.25,1.25,1.125,0.94,1.05,0.307,0.843,0.516,0.85,1.25,1.157,0.272,1.024,1.196,1.155,0.921,1.25,1.25,1.25,0.778,0.379,0.702,1.166,0.918,0.339,0.376,0.176,0.16];
+      v4Mouth.forEach((v,i)=>tl.to('.lpv4-05-actor .rig-mouth',{scaleY:v,duration:1/15,ease:'none'},i/15));
+      tl.to('.lpv4-05-actor .rig-mouth',{scaleY:.16,duration:.12}, 17.538125);
+})();
+  </script>
+</template>

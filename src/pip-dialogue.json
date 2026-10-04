@@ -1,0 +1,13 @@
+{
+  "welcome": "Oh, you're early. Good. I'm Pip. Before you join the lounge queue, let's check your card and your trip. Want me to walk you through it?",
+  "card": "First, the exact card. World Mastercard and Visa Signature can have different rules, even with the same bank name. Pick the one printed on your card. No card number needed.",
+  "dates": "Where are we flying? Pick the date, airport, terminal and domestic or international section. A lounge in terminal three doesn't help you in terminal one.",
+  "spend": "Now the bit that catches people out. Spending has a date window. Use eligible spending for the window shown here, then add visits already used. Not sure of a number? Leave it unknown. We won't guess.",
+  "proof": "Here's your result. Open Bank evidence to see the original wording, or Ask Pip for the live explanation. If the lounge hasn't been verified, that question stays open.",
+  "qualified": "The published conditions pass for these facts. Good. Now check the lounge match and any remaining questions below. The bank and lounge still decide whether you're admitted.",
+  "not-qualified": "This trip doesn't meet every published condition. Look at the decision trail below. It shows which check stopped the result. If a fact is wrong, change it and check again.",
+  "unknown": "I can't settle this one yet. See what we still need below. An unknown isn't a rejection. It's a question we should answer before you reach the desk.",
+  "balance": "Let's try a trip that surprises people. Zero spending, twelve lakh rupees in qualifying deposits. Watch the balance route. Then look at the lounge question separately.",
+  "exact": "A similar name isn't enough. This pilot has reviewed rules for three card families. If yours isn't covered, I'll say so. Better that than sending you to the wrong queue.",
+  "before-result": "This is where your answer will appear. Tap Check my trip when the details are ready. You'll see which conditions pass, what needs confirming, and the bank sources behind it."
+}

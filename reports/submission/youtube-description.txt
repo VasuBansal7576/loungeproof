@@ -1,0 +1,20 @@
+Your card says lounge access. Does your trip qualify?
+
+LoungeProof checks dated bank rules for your exact card, qualifying spend or balance, visits left and airport terminal. Pip explains the problem, walks through three example trips, and shows how Sanity Context supplies the evidence agent.
+
+Built for the Sanity Challenge, Path One.
+Source and local setup: https://github.com/VasuBansal7576/loungeproof
+Challenge: https://dev.to/challenges/sanity-2026-09-16
+Sanity project: 204x480o, public production dataset.
+
+00:00 The lounge eligibility problem
+00:32 Meet Pip
+00:46 ICICI balance route
+01:05 HDFC dated terms
+01:26 Axis exact trip
+01:46 Sanity and the live agent
+02:04 Proof and scope
+
+Real public bank documents. Invented traveller facts. No bank account integration or physical admission test. The pilot covers reviewed October 2026 policy scope; unverified locations and conditional exceptions stay marked.
+
+Made with Codex, Sanity, HyperFrames and local Kokoro synthetic narration. Pip is an original boarding-pass character. No real person's voice was cloned.

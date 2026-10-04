@@ -1,0 +1,43 @@
+{
+  "lines": [
+    {
+      "id": "v2-01",
+      "sfx": [
+        "whoosh"
+      ]
+    },
+    {
+      "id": "v2-02",
+      "sfx": [
+        "click-soft"
+      ]
+    },
+    {
+      "id": "v2-03",
+      "sfx": [
+        "click-soft"
+      ]
+    },
+    {
+      "id": "v2-04",
+      "sfx": [
+        "click-soft"
+      ]
+    },
+    {
+      "id": "v2-05",
+      "sfx": [
+        "click-soft"
+      ]
+    },
+    {
+      "id": "v2-06",
+      "sfx": [
+        "chime"
+      ]
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  }
+}

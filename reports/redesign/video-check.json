@@ -1,0 +1,343 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/compositions/frames/lpv2-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      }
+    ],
+    "filesScanned": 7
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 6,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 21.537,
+        "selector": "#lpv2-02-amount",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 414.44,
+          "top": 485.23,
+          "right": 736.74,
+          "bottom": 607.68,
+          "width": 322.3,
+          "height": 122.45
+        },
+        "containerSelector": "#lpv2-02-or",
+        "text": "₹12 lakh",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/lpv2-02.html",
+        "bbox": {
+          "x": 414.44,
+          "y": 485.23,
+          "width": 322.3,
+          "height": 122.45
+        },
+        "firstSeen": 21.537,
+        "lastSeen": 21.537,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 24.545,
+        "selector": "div.lpv2-02-crop > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 949,
+          "top": 345,
+          "right": 1844,
+          "bottom": 1165,
+          "width": 895,
+          "height": 820
+        },
+        "containerSelector": "div.lpv2-02-crop",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 949,
+          "top": 345,
+          "right": 1844,
+          "bottom": 715,
+          "width": 895,
+          "height": 370
+        },
+        "overflow": {
+          "bottom": 450
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv2-02.html",
+        "bbox": {
+          "x": 949,
+          "y": 345,
+          "width": 895,
+          "height": 820
+        },
+        "firstSeen": 24.545,
+        "lastSeen": 24.545,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 42.485,
+        "selector": "div.lpv2-04-stage > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 519.67,
+          "top": 330.78,
+          "right": 666.82,
+          "bottom": 427.11,
+          "width": 147.15,
+          "height": 96.33
+        },
+        "containerSelector": "div.lpv2-04-stage > div:nth-of-type(3) > div:nth-of-type(2)",
+        "text": "AUG",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/lpv2-04.html",
+        "bbox": {
+          "x": 519.67,
+          "y": 330.78,
+          "width": 147.15,
+          "height": 96.33
+        },
+        "firstSeen": 42.485,
+        "lastSeen": 42.485,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 53.999,
+        "selector": "div.lpv2-04-verdict > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 76,
+          "top": 185,
+          "right": 1257.39,
+          "bottom": 1267.39,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "containerSelector": "div.lpv2-04-verdict",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 185,
+          "right": 1257.39,
+          "bottom": 647,
+          "width": 1181.39,
+          "height": 462
+        },
+        "overflow": {
+          "bottom": 620.39
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv2-04.html",
+        "bbox": {
+          "x": 76,
+          "y": 185,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "firstSeen": 53.999,
+        "lastSeen": 53.999,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 53.999,
+        "selector": "div.lpv2-04-directory > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 76,
+          "top": -291.62,
+          "right": 1257.39,
+          "bottom": 790.77,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "containerSelector": "div.lpv2-04-directory",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 668,
+          "right": 1257.39,
+          "bottom": 780,
+          "width": 1181.39,
+          "height": 112
+        },
+        "overflow": {
+          "top": 959.62,
+          "bottom": 10.77
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv2-04.html",
+        "bbox": {
+          "x": 76,
+          "y": -291.62,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "firstSeen": 53.999,
+        "lastSeen": 53.999,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 53.999,
+        "selector": "div.lpv2-04-directory > img:nth-of-type(1)",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 76,
+          "top": -291.62,
+          "right": 1257.39,
+          "bottom": 790.77,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "containerSelector": "div.lpv2-04-directory",
+        "text": "",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 76,
+          "top": 668,
+          "right": 1257.39,
+          "bottom": 780,
+          "width": 1181.39,
+          "height": 112
+        },
+        "dataAttributes": {
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/frames/lpv2-04.html",
+        "bbox": {
+          "x": 76,
+          "y": -291.62,
+          "width": 1181.39,
+          "height": 1082.39
+        },
+        "firstSeen": 53.999,
+        "lastSeen": 53.999,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 88.362,
+    "samples": [
+      4.909,
+      14.727,
+      24.545,
+      34.363,
+      44.181,
+      53.999,
+      63.817,
+      73.635,
+      83.453
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 6,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "specPath": "/Users/vasu/Desktop/Unknowns/loungeproof/videos/loungeproof/index.motion.json",
+    "samples": 300
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      4.909,
+      24.545,
+      44.181,
+      63.817,
+      83.453
+    ],
+    "checked": 37,
+    "passed": 37
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      "snapshots/frame-00-at-4.9s.png",
+      "snapshots/frame-01-at-24.5s.png",
+      "snapshots/frame-02-at-44.2s.png",
+      "snapshots/frame-03-at-63.8s.png",
+      "snapshots/frame-04-at-83.5s.png"
+    ],
+    "times": [
+      4.909,
+      24.545,
+      44.181,
+      63.817,
+      83.453
+    ],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.114",
+    "latestVersion": "0.8.114",
+    "updateAvailable": false
+  }
+}

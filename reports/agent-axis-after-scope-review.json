@@ -1,0 +1,187 @@
+{
+  "evaluatedAt": "2026-10-03T15:16:11.811Z",
+  "name": "Axis: previous three full months and exact DEL T3 lounge",
+  "passed": true,
+  "facts": {
+    "card": "axis-priority",
+    "travelDate": "2026-10-10",
+    "country": "India",
+    "airport": "DEL",
+    "terminal": "T3",
+    "flightType": "domestic",
+    "accountType": "unknown",
+    "openedOn": "2025-01-15",
+    "programMaintained": null,
+    "familyEligibilityMaintained": null,
+    "eligibleSpend": 12000,
+    "balance": null,
+    "relationship": null,
+    "visitsUsed": 0,
+    "guests": 0,
+    "question": "Which spending months count for this October trip, how many visits remain, and is Encalm at Delhi T3 domestic listed for my card?"
+  },
+  "expected": "qualified",
+  "verdict": {
+    "status": "qualified",
+    "title": "Published benefit conditions met",
+    "summary": "You have 2 of 2 quarterly visits remaining under the supplied facts. Your selected terminal has a listed lounge.",
+    "questions": [],
+    "trace": [
+      {
+        "label": "Applicable policy",
+        "state": "pass",
+        "detail": "Priority debit • revised spend requirement. Effective 2026-09-01; reviewed 2026-10-03.",
+        "sourceId": "axis-priority-2026"
+      },
+      {
+        "label": "New-card exception",
+        "state": "info",
+        "detail": "New-card spend waiver ended 2025-04-30.",
+        "sourceId": "axis-priority-2026"
+      },
+      {
+        "label": "Billed debit spend in previous three calendar months",
+        "state": "pass",
+        "detail": "₹12,000 / ₹10,000 required in 2026-07-01 to 2026-09-30.",
+        "sourceId": "axis-priority-2026"
+      },
+      {
+        "label": "Quarterly visit allowance",
+        "state": "pass",
+        "detail": "0 used out of 2; 2 remaining.",
+        "sourceId": "axis-priority-2026"
+      },
+      {
+        "label": "Exact lounge match",
+        "state": "pass",
+        "detail": "Encalm Lounge • DEL T3 domestic • Table 3, page 4, row 23",
+        "sourceId": "axis-lounges"
+      },
+      {
+        "label": "Entry method",
+        "state": "info",
+        "detail": "Use the eligible Priority debit card at a lounge listed in Table 3. Entry is subject to bank validation and operator conditions.",
+        "sourceId": "axis-priority-2026"
+      }
+    ],
+    "period": {
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "label": "2026-07-01 to 2026-09-30"
+    },
+    "remaining": 2,
+    "policy": {
+      "_id": "policy-axis-priority-202609",
+      "_type": "loungePolicy",
+      "card": "axis-priority",
+      "title": "Priority debit • revised spend requirement",
+      "issuer": "Axis Bank",
+      "validFrom": "2026-09-01",
+      "reviewedAt": "2026-10-03",
+      "reviewBy": "2026-10-31",
+      "accountTypes": [
+        "savings",
+        "salary",
+        "family-savings",
+        "unknown"
+      ],
+      "openedOnOrAfter": null,
+      "programRequired": false,
+      "window": "previous-three-months",
+      "releaseDay": 2,
+      "quota": 2,
+      "alternatives": [
+        {
+          "kind": "amount",
+          "field": "eligibleSpend",
+          "min": 10000,
+          "label": "Billed debit spend in previous three calendar months"
+        }
+      ],
+      "waiver": "issue-month-plus-three",
+      "accessMethod": "Use the eligible Priority debit card at a lounge listed in Table 3. Entry is subject to bank validation and operator conditions.",
+      "spendNotes": "From 1 October 2026, exclude UPI, wallet reloads, credit card bill payments and cash withdrawals. Use billed transactions in the previous three calendar months. Eligibility updates on the 2nd of each month; the 1st carries the previous month’s status.",
+      "sourceIds": [
+        "axis-priority-2026",
+        "axis-product",
+        "axis-lounges"
+      ],
+      "conflictIds": [],
+      "notes": []
+    },
+    "lounges": [
+      {
+        "_id": "lounge-axis-23",
+        "_type": "lounge",
+        "card": "axis-priority",
+        "airport": "DEL",
+        "terminal": "T3",
+        "flightType": "domestic",
+        "name": "Encalm Lounge",
+        "sourceId": "axis-lounges",
+        "locator": "Table 3, page 4, row 23"
+      }
+    ],
+    "loungeStatus": "listed",
+    "sources": [
+      {
+        "id": "axis-lounges",
+        "title": "Axis debit lounge directory",
+        "url": "https://www.axis.bank.in/docs/default-source/default-document-library/debit-card-lounge-list.pdf?sfvrsn=f43ad662_9",
+        "publisher": "Axis Bank",
+        "locator": "Table 3, page 4: Priority Debit Card / RuPay Platinum NRO",
+        "retrievedAt": "2026-10-03T13:45:05.604332+00:00",
+        "sha256": "884650461351eec08c3822c848beeb6757ff8cff4179e9319904ad8f99ff6a9f",
+        "role": "directory"
+      },
+      {
+        "id": "axis-priority-2026",
+        "title": "Priority debit revisions • September 2026",
+        "url": "https://www.axis.bank.in/docs/default-source/default-document-library/terms-and-conditions-for-nr-priority-debit-card.pdf?sfvrsn=5da9ec52_2",
+        "publisher": "Axis Bank",
+        "locator": "Page 1: lounge programme and excluded categories",
+        "retrievedAt": "2026-10-03T13:45:05.614597+00:00",
+        "sha256": "b622081df5cae473d92256083f5a982f0bea1aa1269ef8708d566ff08b13b4a9",
+        "role": "current"
+      },
+      {
+        "id": "axis-product",
+        "title": "Priority debit current product page",
+        "url": "https://www.axis.bank.in/cards/debit-card/priority-debit-card",
+        "publisher": "Axis Bank",
+        "locator": "Features and benefits: 2 domestic visits per quarter",
+        "retrievedAt": "2026-10-03T13:51:00.129746+00:00",
+        "sha256": "ac27f090614a0bbb88b35819ee1c472ea2a02ed27141aecee407dc6a455befbc",
+        "role": "current"
+      }
+    ],
+    "conflicts": [],
+    "caveats": [
+      "These are published benefit conditions, not a live approval from your bank.",
+      "Your spend and visit count are supplied by you. Lounge capacity and entry validation remain with the operator."
+    ]
+  },
+  "dataMode": "sanity-live",
+  "agent": {
+    "status": "live",
+    "answer": "For your 10 October 2026 trip, July, August and September count: 1 July–30 September 2026. Eligibility updates on 2 October; only 1 October carries September’s status. Your supplied ₹12,000 eligible billed debit spend exceeds the ₹10,000 requirement. From 1 October, UPI, wallet reloads, credit card bill payments and cash/ATM transactions are excluded. [axis-priority-2026]\n\nYou have 2 of 2 complimentary domestic visits remaining for the October–December quarter, with 0 used. The monthly eligibility update does not reset the quarterly visit allowance. [axis-product]\n\nYes, Encalm Lounge at Delhi (DEL) T3 domestic is listed for your selected Priority debit card in the reviewed directory: Table 3, page 4, row 23. [axis-lounges]\n\nThe reviewed verdict is qualified: published benefit conditions are met under your supplied facts. Your unknown account type does not add a missing requirement for this reviewed card variant. Exact lounge admission is separately subject to the reviewed directory, bank/card validation and operator validation, including capacity; entry is not guaranteed. [axis-priority-2026] [axis-lounges]",
+    "citations": [
+      "axis-priority-2026",
+      "axis-product",
+      "axis-lounges"
+    ],
+    "toolCalls": [
+      "initial_context",
+      "knowledge_base_read"
+    ]
+  },
+  "context": {
+    "status": "live",
+    "tools": [
+      "initial_context",
+      "knowledge_base_read",
+      "knowledge_base_search"
+    ]
+  },
+  "durationMs": 36490
+}

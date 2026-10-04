@@ -1,0 +1,204 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@sanity/cli": {
+      "name": "@sanity/cli",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@sanity/codegen"
+      ],
+      "effects": [
+        "sanity"
+      ],
+      "range": "<=0.0.0-20260612111702 || >=5.7.1-next.1",
+      "nodes": [
+        "node_modules/@sanity/cli"
+      ],
+      "fixAvailable": true
+    },
+    "@sanity/codegen": {
+      "name": "@sanity/codegen",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "chokidar",
+        "globby"
+      ],
+      "effects": [
+        "@sanity/cli",
+        "sanity"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@sanity/codegen"
+      ],
+      "fixAvailable": true
+    },
+    "braces": {
+      "name": "braces",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1240992,
+          "name": "braces",
+          "dependency": "braces",
+          "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+          "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+          "severity": "high",
+          "cwe": [
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=3.0.3"
+        }
+      ],
+      "effects": [
+        "chokidar",
+        "micromatch"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/braces"
+      ],
+      "fixAvailable": true
+    },
+    "chokidar": {
+      "name": "chokidar",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "braces"
+      ],
+      "effects": [
+        "@sanity/codegen",
+        "sanity"
+      ],
+      "range": "2.0.0 - 3.6.0",
+      "nodes": [
+        "node_modules/chokidar"
+      ],
+      "fixAvailable": true
+    },
+    "fast-glob": {
+      "name": "fast-glob",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "globby"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/fast-glob"
+      ],
+      "fixAvailable": true
+    },
+    "find-yarn-workspace-root2": {
+      "name": "find-yarn-workspace-root2",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "preferred-pm"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/find-yarn-workspace-root2"
+      ],
+      "fixAvailable": true
+    },
+    "globby": {
+      "name": "globby",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "fast-glob"
+      ],
+      "effects": [
+        "@sanity/codegen"
+      ],
+      "range": ">=8.0.0",
+      "nodes": [
+        "node_modules/globby"
+      ],
+      "fixAvailable": true
+    },
+    "micromatch": {
+      "name": "micromatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "braces"
+      ],
+      "effects": [
+        "fast-glob",
+        "find-yarn-workspace-root2"
+      ],
+      "range": ">=0.2.0",
+      "nodes": [
+        "node_modules/micromatch"
+      ],
+      "fixAvailable": true
+    },
+    "preferred-pm": {
+      "name": "preferred-pm",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "find-yarn-workspace-root2"
+      ],
+      "effects": [
+        "sanity"
+      ],
+      "range": ">=3.0.0",
+      "nodes": [
+        "node_modules/preferred-pm"
+      ],
+      "fixAvailable": true
+    },
+    "sanity": {
+      "name": "sanity",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@sanity/cli",
+        "@sanity/codegen",
+        "chokidar",
+        "preferred-pm"
+      ],
+      "effects": [],
+      "range": "2.29.4-purple-unicorn.509 - 2.30.1-dev-preview.1013 || >=3.0.0-definetype.62",
+      "nodes": [
+        "node_modules/sanity"
+      ],
+      "fixAvailable": true
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 10,
+      "critical": 0,
+      "total": 10
+    },
+    "dependencies": {
+      "prod": 119,
+      "dev": 1021,
+      "optional": 55,
+      "peer": 8,
+      "peerOptional": 0,
+      "total": 1139
+    }
+  }
+}
