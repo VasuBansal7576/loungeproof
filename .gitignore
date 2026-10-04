@@ -22,3 +22,6 @@ videos/source-capture/
 reports/context-token-setup.jpg
 reports/**/previous-ui/
 reports/**/previous-video-frames/
+
+# Local publication screenshots
+reports/submission/*.png

@@ -2,6 +2,8 @@
 
 [Sanity Challenge, Path One](https://dev.to/challenges/sanity-2026-09-16) submission. Public source: https://github.com/VasuBansal7576/loungeproof
 
+[Read the submitted DEV entry](https://dev.to/vasu_ai/loungeproof-know-the-lounge-rule-before-you-join-the-queue-57og) · [Watch the public walkthrough](https://www.youtube.com/watch?v=MUojVsBu7jo).
+
 An India lounge-benefit evidence assistant built for the [Sanity Challenge, Path One](https://dev.to/challenges/sanity-2026-09-16). Select an exact card, a travel date, and example facts. Get a dated eligibility check, original bank citations, remaining visit calculation, and an explicit distinction between benefit qualification and actual admission.
 
 ## Run

@@ -12,7 +12,9 @@ Pip, an original boarding-pass creature, guides the examples. The website uses s
 
 ## Demo
 
-[Watch or download the narrated walkthrough](https://github.com/VasuBansal7576/loungeproof/raw/refs/heads/main/public/walkthrough.mp4)
+{% youtube MUojVsBu7jo %}
+
+[Watch on YouTube](https://www.youtube.com/watch?v=MUojVsBu7jo)
 
 The walkthrough starts with the problem, then shows three trips and the Sanity Context agent. The source includes the same 1080p video and an in-app player with seven selectable chapters.
 

@@ -3,10 +3,8 @@
   "sourcePublished": true,
   "sourceCommit": "a5491b29196ec2be76cf32528c8314ba49b2c83c",
   "videoExport": "public/walkthrough.mp4",
-  "youtubePublished": false,
-  "devSubmitted": false,
-  "pending": "YouTube/DEV agreement approval",
-  "finalSubmissionDraft": "SUBMISSION.md",
+  "youtubePublished": true,
+  "devSubmitted": true,
   "verification": {
     "automatedTests": [
       45,
@@ -17,5 +15,29 @@
       38
     ],
     "livePolicyCheckedAt": "2026-10-04T02:03:27.596Z"
+  },
+  "youtubeUrl": "https://www.youtube.com/watch?v=MUojVsBu7jo",
+  "youtubeVisibility": "Public",
+  "youtubeChecks": "No issues found",
+  "youtubePublicPlayback": "Verified; 143.801 seconds, readyState 4, playing, no error",
+  "devUrl": "https://dev.to/vasu_ai/loungeproof-know-the-lounge-rule-before-you-join-the-queue-57og",
+  "devAuthor": "vasu_ai",
+  "devPublishedDate": "2026-10-04",
+  "devTags": [
+    "devchallenge",
+    "sanitychallenge",
+    "sanity",
+    "ai"
+  ],
+  "devDisclosure": "AI-assisted",
+  "devChallengeBanner": "Sanity Challenge Path One Submission",
+  "receiptRecordedAt": "2026-10-04T02:18:58Z",
+  "finalSubmissionBody": "SUBMISSION.md",
+  "publicReadVerification": {
+    "httpStatus": 200,
+    "signedIn": false,
+    "challengeBannerPresent": true,
+    "projectIdPresent": true,
+    "videoAndCodeLinksPresent": true
   }
 }

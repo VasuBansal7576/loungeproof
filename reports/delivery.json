@@ -60,7 +60,7 @@
   },
   "bankDocuments": "Real public sources",
   "travellerFacts": "Invented examples",
-  "published": false,
+  "published": true,
   "revision": "Pip v4: problem-first opening, slower narration and retimed performance",
   "voice": {
     "provider": "local Kokoro",
@@ -87,5 +87,8 @@
     "problemAndSolutionOpeningSeconds": 32.35725,
     "firstExampleStartsAtSeconds": 46.186208,
     "chapters": 7
-  }
+  },
+  "publicRepository": "https://github.com/VasuBansal7576/loungeproof",
+  "publicVideo": "https://www.youtube.com/watch?v=MUojVsBu7jo",
+  "devSubmission": "https://dev.to/vasu_ai/loungeproof-know-the-lounge-rule-before-you-join-the-queue-57og"
 }
