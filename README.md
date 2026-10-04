@@ -75,7 +75,7 @@ The redesigned interface uses ink, cobalt and yellow, with an original boarding-
 
 ## Walkthrough video
 
-`videos/loungeproof/` contains the HyperFrames composition, captured real UI assets, locked narration, storyboard, and rendering metadata. Its package pins HyperFrames 0.8.114. Run its render command from that folder after dependencies are available. Narration is local Kokoro; on-screen counts are backed by the saved report. The revised problem-first Pip walkthrough, about 2 minutes 24 seconds, is `videos/loungeproof/loungeproof-walkthrough-v4.mp4`. The in-app tour plays `public/walkthrough.mp4`, included in the source archive. Revision sources are `SCRIPT-v4.md`, `STORYBOARD-v4.md` and `frame.md`; the original walkthrough MP4 is preserved.
+`videos/loungeproof/` contains the HyperFrames composition, captured real UI assets, locked narration, storyboard, and rendering metadata. Its package pins HyperFrames 0.8.114. Run its render command from that folder after dependencies are available. Narration is local Kokoro; on-screen counts are backed by the saved report. The revised problem-first Pip walkthrough is about 2 minutes 24 seconds. The finished export is included in the repository at `public/walkthrough.mp4`, which also powers the in-app tour. Local render revisions are kept outside Git. Revision sources are `SCRIPT-v4.md`, `STORYBOARD-v4.md` and `frame.md`; the original walkthrough MP4 is preserved.
 
 ## Dependency review
 
